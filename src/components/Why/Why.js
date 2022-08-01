@@ -66,6 +66,7 @@ const Why = () => {
           <span className={styles.contadoresLine1}>Mais de</span>
           <CountUp
             className={styles.contadoresLine2}
+            start={0}
             end={4000}
             enableScrollSpy={true}
             duration={1.5}
@@ -77,6 +78,7 @@ const Why = () => {
           <span className={styles.contadoresLine1}>Mais de</span>
           <CountUp
             className={styles.contadoresLine2}
+            start={0}
             end={50000}
             enableScrollSpy={true}
             duration={2}
@@ -88,6 +90,7 @@ const Why = () => {
           <span className={styles.contadoresLine1}>Clientes</span>
           <CountUp
             className={styles.contadoresLine2}
+            start={0}
             end={100}
             enableScrollSpy={true}
             duration={2.5}
