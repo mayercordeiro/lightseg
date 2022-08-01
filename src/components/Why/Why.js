@@ -67,7 +67,7 @@ const Why = () => {
           <CountUp
             className={styles.contadoresLine2}
             end={4000}
-            enableScrollSpy={true}
+            enableScrollSpy="true"
             duration={1}
             separator={"."}
           />
@@ -78,7 +78,6 @@ const Why = () => {
           <CountUp
             className={styles.contadoresLine2}
             end={50000}
-            enableScrollSpy={true}
             duration={1.5}
             separator={"."}
           />
@@ -89,7 +88,6 @@ const Why = () => {
           <CountUp
             className={styles.contadoresLine2}
             end={100}
-            enableScrollSpy={false}
             duration={2}
             separator={"."}
             suffix={"%"}
