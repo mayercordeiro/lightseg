@@ -7,16 +7,9 @@ import Um from "../../assets/images/why1.svg";
 import Dois from "../../assets/images/why2.svg";
 import Tres from "../../assets/images/why3.svg";
 // Modules
-import CountUp, { useCountUp } from "react-countup";
+import CountUp from "react-countup";
 
 const Why = () => {
-  useCountUp({
-    ref: "counter",
-    end: 1234567,
-    enableScrollSpy: true,
-    scrollSpyDelay: 200,
-  });
-
   return (
     <section>
       <h1 className={styles.whyh1}>Por que a LightSeg?</h1>
@@ -74,6 +67,7 @@ const Why = () => {
           <CountUp
             className={styles.contadoresLine2}
             end={4000}
+            startOnMount="true"
             enableScrollSpy="true"
             duration={1}
             separator={"."}
@@ -101,17 +95,6 @@ const Why = () => {
           />
           <span className={styles.contadoresLine3}>Satisfeitos</span>
         </div>
-
-
-        <div className="App">
-          <div className="content" />
-          <CountUp end={100} enableScrollSpy />
-          <br />
-          <span id="counter" />
-        </div>
-
-
-        
         <div className={styles.contadoresBotao}>
           <NavLink to="/sobre">Leia Mais Sobre Nós</NavLink>
         </div>
