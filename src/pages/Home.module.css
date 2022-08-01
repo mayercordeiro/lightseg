@@ -1,0 +1,8 @@
+.main {
+  font-family: "Montserrat", sans-serif;
+  background-image: url(../assets/images/bkg.svg);
+  background-position-x: right;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: 1066px;
+}

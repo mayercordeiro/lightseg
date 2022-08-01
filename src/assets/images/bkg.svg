@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns:v="https://vecta.io/nano"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1066 1247"
+	 style="enable-background:new 0 0 1066 1247;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:3.000000e-02;fill:#0C3B5E;enable-background:new    ;}
+	.st1{fill:url(#SVGID_1_);}
+</style>
+<path class="st0" d="M121.7,0c0,0,158.8,246,97.8,386c-54,125-119,201-119,201S-183,904.5,202,1023.5c105,34,132.5,28.5,243,48
+	c61.1,10.8,472.5,91.9,621,175V0H121.7z"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="188.0333" y1="384.4332" x2="1111.6604" y2="-396.5457" gradientTransform="matrix(1 0 0 1 0 480)">
+	<stop  offset="0" style="stop-color:#DADE30"/>
+	<stop  offset="0.162" style="stop-color:#AFBC3A;stop-opacity:0.982"/>
+	<stop  offset="0.514" style="stop-color:#58774D;stop-opacity:0.942"/>
+	<stop  offset="0.762" style="stop-color:#214C59;stop-opacity:0.914"/>
+	<stop  offset="0.881" style="stop-color:#0C3B5E;stop-opacity:0.9"/>
+</linearGradient>
+<path class="st1" d="M121.7,0c0,0,197.3,213.5,111.3,428.5c-83.1,207.6-218.4,398.8,58.2,502.2c2.6,1,5.3,2,7.9,3.2
+	c75.1,33.4,364,60.6,364,60.6l403,48V0H121.7z"/>
+</svg>

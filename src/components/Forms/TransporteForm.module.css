@@ -1,0 +1,83 @@
+.formulario {
+    max-width: 800px;
+    padding: 16px;
+}
+
+.dataClients {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.title {
+    color: #0b3a5e;
+    font-size: 1.8rem;
+    margin: 20px 0;
+}
+.title2 {
+    color: #0b3a5e;
+    font-size: 1.8rem;
+    margin: 40px 0;
+}
+
+.titleWithDescription {
+    color: #0b3a5e;
+    font-size: 1.1rem;
+    margin-top: -40px;
+}
+
+.description {
+    color: #0b3a5e;
+    font-size: 1.1rem;
+}
+
+.add {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.add label {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+.veiculos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.veiculos > h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 0 10px;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+.riscos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.riscos > h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 0 10px;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}

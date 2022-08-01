@@ -1,0 +1,159 @@
+.seguros {
+    display: grid;
+    grid-template-columns: minmax(104px, auto) minmax(380px, 635px) minmax(380px, 635px) minmax(104px, auto);
+    justify-items: center;
+    background: #FFF;
+    position: relative;
+    top: 60px;
+    font-family: "Montserrat", sans-serif;
+    margin: 100px 0;
+    background-image: url(../assets/images/bgabout.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+}
+.seguros > h1, h2 {
+    grid-column: 2 / 4;
+    text-align: center;
+}
+.seguros > h1 {
+    font-size: 3rem;
+    line-height: 3.4rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    background: linear-gradient(90deg, #cdd400 10.89%, #6f892e 25%, #0b3a5e 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.seguros > h2 {
+    max-width: 1200px;
+    font-weight: 300;
+    font-size: 2rem;
+    margin: 10px 0px 100px 0px;
+    color: #0b3a5e;
+}
+.segurosMain {
+    grid-column: 2 / 3;
+    height: 410px;
+    box-shadow: 0px 4px 50px 4px rgb(0, 0, 0, 0.25);
+    border-radius: 16px;
+    margin-bottom: 100px;
+}
+.segurosMainRight {
+    grid-column: 3 / 4;
+    height: 410px;
+    box-shadow: 0px 4px 50px 4px rgb(0, 0, 0, 0.25);
+    border-radius: 16px;
+    margin-bottom: 100px;
+}
+.segurosContainer {
+    width: 500px;
+    height: 300px;
+    background-color: #F1F1F1;
+    border-radius: 16px 16px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.segurosContainer > h2 {
+    font-size: 2.375rem;
+    font-weight: 700;
+    color: #083A5F;
+}
+.segurosLinks {
+    width: 500px;
+    height: 110px;
+    border-radius: 0 0 16px 16px;
+    background-color: #F1F1F1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.segurosLinks > div {
+    width: 200px;
+    height: 55px;
+    background-color: #083A5F;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.segurosLinks > div > a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+}
+/* BKG */
+.bkg_transporte_cargas {
+    background-image: url("../assets/images/seguro-transporte.jpg");
+}
+.bkg_auto {
+    background-image: url("../assets/images/seguro-auto.jpg");
+}
+.bkg_vida {
+    background-image: url("../assets/images/seguro-vida.jpg");
+}
+.bkg_residencial {
+    background-image: url("../assets/images/seguro-residencial.jpg");
+}
+.bkg_affinity {
+    background-image: url("../assets/images/seguro-affinity.jpg");
+}
+/* END BKG */
+@media screen and (max-width: 1299px) {
+    .seguros {
+        grid-template-columns: minmax(16px, auto) 1fr 1fr minmax(16px, auto);
+    }
+}
+@media screen and (max-width: 1199px) {
+    .seguros {
+        grid-template-columns: minmax(16px, auto) 1fr minmax(16px, auto);
+    }
+    .segurosMain {
+        grid-column: 2 / 3;
+    }
+    .segurosMainRight {
+        grid-column: 2 / 3;
+    }
+    .seguros > h1, h2 {
+        grid-column: 2 / 3;
+    }
+}
+@media screen and (max-width: 599px) {
+    .seguros {
+        margin: 70px 0 100px 0;
+    }
+    .segurosContainer, .segurosLinks {
+        max-width: 380px;
+    }
+    .segurosContainer > h2 {
+        text-align: center;
+        font-size: 2.375rem;
+        font-weight: 700;
+        color: #083A5F;
+    }
+    .seguros > h1 {
+        font-size: 2.1rem;
+        line-height: 2.5rem;
+    }
+    .seguros > h2 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
+@media screen and (max-width: 488px) {
+    .seguros {
+        margin: 30px 0 100px 0;
+    }
+}
+@media screen and (max-width: 439px) {
+    .segurosContainer, .segurosLinks {
+        max-width: 350px;
+    }
+}
+@media screen and (max-width: 385px) {
+    .segurosContainer, .segurosLinks {
+        max-width: 310px;
+    }
+}

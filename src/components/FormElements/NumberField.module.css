@@ -1,0 +1,37 @@
+.numberField {
+    margin: 0 0 20px;
+}
+
+.numberField label, input {
+    display: block;
+    width: 100%;
+}
+.numberField label {
+    margin: 0 0 10px;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+.numberField input {
+    outline: none;
+    background: rgba(0, 0, 0, 0.1);
+    border: 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 12px 8px;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 500;
+    line-height: inherit;
+    transition: 0.2s ease;
+}
+.numberField input:focus {
+    border: 1.6px solid rgba(0, 0, 0, 0.5);
+}
+.numberField input::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}

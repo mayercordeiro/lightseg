@@ -1,0 +1,32 @@
+.botaoModal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    height: 125px;
+    background: transparent;
+    border: 0.2rem solid #0C3B5E;
+}
+.botaoModal:hover {
+    background: #DADE30;
+    border: 0.2rem solid #0C3B5E;
+}
+.botaoModal:focus {
+    border: unset;
+    background-color: unset;
+    border: 0.2rem solid #0C3B5E;
+    box-shadow: unset;
+}
+.botaoModal:active {
+    background-color: unset;
+    border-color: unset;
+}
+.botaoModal img {
+    width: 50px;
+}
+.botaoModal h2 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #0C3B5E;
+}

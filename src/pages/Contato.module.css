@@ -1,0 +1,133 @@
+.contato {
+  display: grid;
+  grid-template-columns: minmax(104px, auto) minmax(380px, 635px) minmax(
+      380px,
+      635px
+    ) minmax(104px, auto);
+  background: #fff;
+  margin-top: 200px;
+  font-family: "Montserrat", sans-serif;
+  color: #0b3a5e;
+  background-image: url(../assets/images/bgabout.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: top;
+}
+.contatoTexts {
+  grid-column: 2 / 3;
+}
+.contatoTexts h1 {
+  max-width: 500px;
+  font-size: 3rem;
+  line-height: 3.4rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #cdd400 10.89%, #6f892e 25%, #0b3a5e 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contatoTexts p {
+  max-width: 1200px;
+  font-weight: 300;
+  font-size: 2rem;
+  margin: 0px 0px 40px 0px;
+  color: #0b3a5e;
+}
+.contatoTexts img {
+  margin-left: -10px;
+}
+.contatoForm h2 {
+  font-size: 1.2rem;
+  margin-top: 25px;
+}
+.contatoForm form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.contatoForm form div {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 10px 15px;
+}
+.contatoForm input {
+  max-width: 100%;
+}
+.contatoForm input, textarea {
+  background-color: #fff;
+  border: 1px solid #dadce1;
+  border-radius: 6px;
+  padding: 6px 22px;
+  line-height: normal;
+  height: 50px;
+  outline: none;
+}
+.contatoForm textarea {
+  height: unset;
+  width: 100%;
+}
+#mensagem {
+  width: 100%;
+}
+#btnEnviar input {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  padding: 0 34px;
+  line-height: 53px;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden!important;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  background-color: #09a223;
+}
+.infos {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr) ;
+  font-family: "Montserrat", sans-serif;
+  color: #0b3a5e;
+  margin: 100px auto;
+  max-width: 1270px;
+}
+.infosContainer {
+  display: flex;
+  gap: 15px;
+}
+.infosImg img {
+  width: 40px;
+}
+.infosTexts h2 {
+  font-weight: 700;
+  text-align: unset;
+}
+.infosTexts p {
+  font-size: 1.2rem;
+  margin-top: 2px;
+  margin-bottom: 0px;
+}
+.middle {
+  display: flex;
+  gap: 15px;
+}
+.right {
+  display: flex;
+  gap: 15px;
+}
+.btn_enviar {
+  width: 100% !important;
+}
+.btn_enviar input[type=submit] {
+  background-color: #0b3a5e;
+  color: #FFF;
+  font-size: 1.4rem;
+  font-weight: 700;
+  height: 60px;
+}
+@media screen and (max-width: 1199px) {
+
+}

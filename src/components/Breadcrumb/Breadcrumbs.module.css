@@ -1,0 +1,24 @@
+.breadcrumb {
+    background: #FFF;
+    align-items: center;
+    background-image: url(../../assets/images/background-breadcrumb.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 220px;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+}
+.breadcrumb h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 3px 3px 5px #000;
+}
+@media screen and (max-width: 699px) {
+    .breadcrumb {
+        background-position: 35%
+    }
+}

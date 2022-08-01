@@ -1,0 +1,109 @@
+header {
+    font-family: 'Montserrat', sans-serif;
+}
+#menuPages {
+    background: #FFF;
+    box-shadow: 0 3px 10px 0 #00000070;
+}
+#menuPages a {
+    color: #0c3b5e;
+}
+.scrollOff {
+    padding: 0px 80px;
+}
+.scrollOn {
+    padding: 0px 80px;
+    background-color: #fff;
+    box-shadow: 0 3px 10px 0 #00000070;
+    height: 82px;
+    transition: all .4s ease;
+}
+.scrollOff a {
+    font-size: 1.1rem;
+    color: #FFF;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 6px 12px;
+    transition: all .4s ease;
+}
+.scrollOff a:last-child {
+    padding-right: 0;
+}
+.scrollOn a {
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #0c3b5e;
+    transition: all .4s ease;
+    padding: 6px 12px;
+    transition: all .4s ease;
+}
+.scrollOn a:last-child {
+    padding-right: 0;
+}
+#logo {
+    height: 90px;
+    transition: all .4s ease;
+}
+#logoScroll {
+    height: 65px;
+    transition: all .4s ease;
+}
+.navbar-nav {
+    align-items: center;
+}
+.navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: unset;
+    transition: all .8s ease;
+}
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0 !important;
+}
+.navbar-toggler-icon {
+    background-image: url(../../assets/images/menu.svg);
+}
+.offcanvas-body > div > a {
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    text-decoration: none;
+    color: #0c3b5e;
+    transition: all .4s ease;
+    padding: 6px 12px;
+    transition: all .4s ease;
+}
+#cote {
+    background-color: #DADE30;
+    border-radius: 10px;
+    margin-right: 0;
+    padding: 8px 12px;
+    color: #0c3b5e;
+}
+@media screen and (max-width: 1199px) {
+    .navbar-nav {
+        align-items: unset;
+    }
+    #cote {
+        text-align: center;
+    }
+    .scrollOff {
+        background-color: #fff;
+        box-shadow: 0 3px 10px 0 #00000070;
+    }
+}
+@media screen and (max-width: 799px) {
+    .container-fluid {
+        justify-content: center !important;
+        flex-wrap: nowrap;
+    }
+    .scrollOff {
+        padding: 0 16px;
+    }
+    .navbar-toggler {
+        display: block;
+        position: absolute;
+        right: 4%;
+    }
+}

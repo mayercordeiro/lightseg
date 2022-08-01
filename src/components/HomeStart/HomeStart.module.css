@@ -1,0 +1,177 @@
+.containerMain {
+  display: grid;
+  grid-template-columns: minmax(104px, auto) minmax(380px, 600px) minmax(
+      380px,
+      670px
+    ) minmax(104px, auto);
+  margin-bottom: 290px;
+}
+.intro {
+  margin-top: 250px;
+  max-width: 540px;
+  font-family: "Montserrat", sans-serif;
+  grid-column-start: 2;
+}
+.intro h1 {
+  font-size: 3rem;
+  line-height: 3.4rem;
+  color: #0b3a5e;
+  font-weight: bold;
+}
+.intro p {
+  max-width: 530px;
+  font-size: 1.5rem;
+  color: #0b3a5e;
+  font-weight: 400;
+  margin-top: 20px;
+  line-height: 2rem;
+}
+.intro h2 {
+  font-size: 1.25rem;
+  margin-top: 40px;
+  font-weight: bold;
+  color: #c7c7c7;
+}
+/* RIGHT */
+.cotacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 250px;
+  width: 540px;
+  height: 440px;
+  font-family: "Montserrat", sans-serif;
+  grid-column-start: 3;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 46px 80px 4px #00000096;
+  justify-self: end;
+}
+
+.cotacao_h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #0b3a5e;
+  margin-top: 40px;
+}
+.cotacao_p {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #0b3a5e;
+  margin-top: 10px;
+  margin: 0px 0px 33px;
+}
+#slide {
+  position: relative;
+  width: 540px;
+}
+.slideseguros {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  height: 100%;
+}
+.botaoseguros {
+  background-image: linear-gradient(rgb(212, 219, 7), #cdd400);
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+  border-radius: 4px;
+  color: #0b3a5e;
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 1.2;
+  display: block;
+  box-sizing: border-box;
+  padding: 0.9375rem;
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s;
+  text-decoration: none !important;
+  text-align: center;
+}
+@media screen and (max-width: 1329px) {
+  .intro p {
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 1125px) {
+  .containerMain {
+    grid-template-columns: minmax(16px, auto) minmax(380px, 670px) minmax(16px, auto);
+    margin-bottom: unset;
+  }
+  .intro {
+    grid-column: 2 / 3;
+    justify-self: center;
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+  }
+  .intro h1 {
+    color: #fff;
+    text-align: center;
+  }
+  .intro p {
+    max-width: unset;
+    color: #fff;
+    margin-top: 25px;
+    text-align: center;
+  }
+  .intro h2 {
+    font-size: 1.25rem;
+    margin-top: 60px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+  }
+  .parceiros {
+    align-self: center;
+  }
+  .cotacao {
+    grid-column: 2 / 3;
+    justify-self: center;
+    margin: 80px 0 100px 0;
+  }
+}
+@media screen and (max-width: 599px) {
+  .intro h1 {
+    font-size: 2.1rem;
+    line-height: 2.5rem;
+  }
+  .intro p {
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+  }
+  .cotacao {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / 4;
+    border-radius: 0px;
+    justify-self: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 4px 50px 0 #00000025;
+    padding-bottom: 40px;
+  }
+  #slide {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 499px) {
+  .slideseguros {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 415px) {
+  .containerMain {
+    grid-template-columns: 1fr;
+  }
+  .intro {
+    padding: 0 16px;
+  }
+}
