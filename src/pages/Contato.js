@@ -2,7 +2,6 @@
 import styles from "./Contato.module.css";
 // Components
 import Breadcrumbs from "../components/Breadcrumb/Breadcrumbs";
-import { NavLink } from "react-router-dom";
 // Images
 import Endereco from "../assets/images/contatoendereco.svg";
 import Email from "../assets/images/contatoemail.svg";

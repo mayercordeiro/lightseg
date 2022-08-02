@@ -2,9 +2,9 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 // CSS
-import styles from "./Modal.module.css"
+import styles from "./Modal.module.css";
 // Images
-import Vida from "../../assets/images/vida.svg"
+import Vida from "../../assets/images/vida.svg";
 // Components
 
 function MyVerticallyCenteredModalVida(props) {
@@ -15,8 +15,7 @@ function MyVerticallyCenteredModalVida(props) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton>
-      </Modal.Header>
+      <Modal.Header closeButton></Modal.Header>
       <Modal.Body>
         {/*<TransporteForm />*/}
         <h1>Vida</h1>

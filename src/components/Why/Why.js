@@ -67,7 +67,6 @@ const Why = () => {
           <CountUp
             className={styles.contadoresLine2}
             end={4000}
-            startOnMount="true"
             enableScrollSpy="true"
             duration={1}
             separator={"."}
