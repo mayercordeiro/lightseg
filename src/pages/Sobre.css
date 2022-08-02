@@ -109,6 +109,18 @@
 .textobold {
   font-weight: 700;
 }
+.caminhao {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  height: 300px;
+  align-items: center;
+  padding-right: 36px;
+  margin-top: -90px;
+}
+.caminhao img {
+  max-width: 280px;
+}
 @media screen and (max-width: 1199px) {
   .about {
     grid-template-columns: minmax(16px, auto) 1fr minmax(16px, auto);
@@ -119,5 +131,13 @@
   .sobre {
     grid-column: 2 / 3;
     margin-top: 50px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .caminhao {
+    margin-top: 0px;
+  }
+  .sobre {
+    margin-top: 0px;
   }
 }

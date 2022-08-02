@@ -3,6 +3,7 @@ import Breadcrumbs from "../components/Breadcrumb/Breadcrumbs";
 import "./Sobre.css";
 // Images
 import SetaSobre from "../assets/images/setasobre.svg";
+import Truck from "../assets/images/trucksobre.svg";
 // Tabs
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
@@ -48,6 +49,9 @@ const Sobre = () => {
                     <li>Responsabilidade.</li>
                   </div>
                 </ul>
+              </div>
+              <div className="caminhao">
+                <img src={Truck} />
               </div>
             </Tab>
             <Tab eventKey="profile" title="Missão">
