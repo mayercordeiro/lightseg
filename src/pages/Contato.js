@@ -7,8 +7,16 @@ import Endereco from "../assets/images/contatoendereco.svg";
 import Email from "../assets/images/contatoemail.svg";
 import Telefone from "../assets/images/contatotelefone.svg";
 import Destaque from "../assets/images/contatoimg.png";
+import { useState } from "react";
 
 const Contato = () => {
+
+  const [nome, setNome] = useState();
+  const [sobreNome, setSobreNome] = useState();
+  const [email, setEmail] = useState();
+
+  console.log(`Nome: ${nome}, Sobrenome: ${sobreNome}, Email: ${email}`);
+
   return (
     <section>
       <Breadcrumbs titulo="Contato" />
@@ -26,10 +34,7 @@ const Contato = () => {
             outros meios de comunicação.
           </h2>
 
-          <form
-            method="POST"
-            action="https://formsubmit.co/lightsegcorretora@gmail.com"
-          >
+          <form>
             <div>
               <input
                 id="nome"
@@ -37,6 +42,8 @@ const Contato = () => {
                 placeholder="Nome"
                 type="text"
                 required
+                value={nome}
+                onChange={(e) => setNome(e.target.value)}
               />
             </div>
             <div>
@@ -45,6 +52,9 @@ const Contato = () => {
                 name="sobrenome"
                 placeholder="Sobrenome"
                 type="text"
+                required
+                value={sobreNome}
+                onChange={(e) => setSobreNome(e.target.value)}
               />
             </div>
             <div>
@@ -54,6 +64,8 @@ const Contato = () => {
                 placeholder="Email"
                 type="email"
                 required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div>

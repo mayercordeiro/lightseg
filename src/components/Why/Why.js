@@ -8,6 +8,7 @@ import Dois from "../../assets/images/why2.svg";
 import Tres from "../../assets/images/why3.svg";
 // Modules
 import CountUp from "react-countup";
+import VisibilitySensor from "react-visibility-sensor";
 
 const Why = () => {
   return (
@@ -64,34 +65,35 @@ const Why = () => {
       <div className={styles.contadores}>
         <div className={styles.contadoresContent}>
           <span className={styles.contadoresLine1}>Mais de</span>
-          <CountUp
-            className={styles.contadoresLine2}
-            end={4000}
-            enableScrollSpy="true"
-            duration={1}
-            separator={"."}
-          />
+          <CountUp end={4000} redraw={true} duration={.5} separator={"."}>
+            {({ countUpRef, start }) => (
+              <VisibilitySensor onChange={start} delayedCall>
+                <span className={styles.contadoresLine2} ref={countUpRef} />
+              </VisibilitySensor>
+            )}
+          </CountUp>
           <span className={styles.contadoresLine3}>Clientes Segurados</span>
         </div>
         <div className={styles.contadoresContent}>
           <span className={styles.contadoresLine1}>Mais de</span>
-          <CountUp
-            className={styles.contadoresLine2}
-            end={50000}
-            duration={1.5}
-            separator={"."}
-          />
+          <CountUp end={50000} redraw={true} duration={1.5} separator={"."}>
+            {({ countUpRef, start }) => (
+              <VisibilitySensor onChange={start} delayedCall>
+                <span className={styles.contadoresLine2} ref={countUpRef} />
+              </VisibilitySensor>
+            )}
+          </CountUp>
           <span className={styles.contadoresLine3}>Cargas Transportadas</span>
         </div>
         <div className={styles.contadoresContent}>
           <span className={styles.contadoresLine1}>Clientes</span>
-          <CountUp
-            className={styles.contadoresLine2}
-            end={100}
-            duration={2}
-            separator={"."}
-            suffix={"%"}
-          />
+          <CountUp end={100} redraw={true} duration={2} separator={"."} suffix={"%"}>
+            {({ countUpRef, start }) => (
+              <VisibilitySensor onChange={start} delayedCall>
+                <span className={styles.contadoresLine2} ref={countUpRef} />
+              </VisibilitySensor>
+            )}
+          </CountUp>
           <span className={styles.contadoresLine3}>Satisfeitos</span>
         </div>
         <div className={styles.contadoresBotao}>
