@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 // CSS
 import styles from "./HomeStart.module.css";
 // Router
@@ -15,7 +14,7 @@ const HomeStart = () => {
   return (
     <main className={styles.containerMain}>
       <section className={styles.intro}>
-        <h1>Seguros para o Transporte de CargasV18.00</h1>
+        <h1>Seguros para o Transporte de Cargas</h1>
         <p>
           Cada produto transportado possui sua importância e característica. A
           Lightseg está pronta para apresentar a melhor seguradora, o melhor

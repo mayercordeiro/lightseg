@@ -63,6 +63,9 @@ header {
 .navbar-toggler-icon {
     background-image: url(../../assets/images/menu.svg);
 }
+.offcanvas {
+    max-width: 80% !important;
+}
 .offcanvas-body > div > a {
     font-size: 1.1rem;
     font-family: 'Montserrat', sans-serif;

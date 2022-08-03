@@ -67,7 +67,7 @@ const Why = () => {
           <span className={styles.contadoresLine1}>Mais de</span>
           <CountUp end={4000} redraw={true} duration={.5} separator={"."}>
             {({ countUpRef, start }) => (
-              <VisibilitySensor onChange={start} delayedCall>
+              <VisibilitySensor onChange={start}>
                 <span className={styles.contadoresLine2} ref={countUpRef} />
               </VisibilitySensor>
             )}

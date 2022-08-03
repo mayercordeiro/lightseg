@@ -12,6 +12,7 @@ import Sobre from "./pages/Sobre";
 import Seguros from "./pages/Seguros";
 import Contato from "./pages/Contato";
 import Mensagem from "./pages/Mensagem";
+import Blog from "./pages/Blog";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/seguros" element={<Seguros />} />
           <Route path="/contato" element={<Contato />} />
           <Route path="/mensagem" element={<Mensagem />} />
+          <Route path="/blog" element={<Blog />} />
         </Routes>
         <Footer />
       </BrowserRouter>
