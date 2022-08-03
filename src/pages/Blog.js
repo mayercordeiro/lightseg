@@ -1,36 +1,17 @@
-import React from 'react';
+// CSS
 import styles from './Blog.module.css';
+// Components
+import Breadcrumbs from "../components/Breadcrumb/Breadcrumbs";
 
-class Blog extends React.Component {
-    state = {
-        linguagens: []
-    };
-
-    componentDidMount() {
-        fetch('https://lightseg.com.br/lsapi/wp-json/wp/v2/artigos')
-            .then(res => res.json())
-            .then(res => {
-                this.setState({
-                    linguagens: res
-                });
-            });
-    }
-
-    render() {
-        return (
-            <div className={styles.blog}>
-                <ul>
-                    {this.state.linguagens.map(item => (
-                        <li key={item.id}>
-                            <p><b>Nome:</b> {item.id}</p>
-                            <div>{item.title.rendered}</div>
-                            <p><b>Ano de criação:</b> {item.acf.resumo}</p>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-        );
-    }
+const Blog = () => {
+  return (
+    <section>
+      <Breadcrumbs titulo="Título do Post" />
+      <section className={styles.post}>
+        <h1>Teste</h1>
+      </section>
+    </section>
+  )
 }
 
-export default Blog;
+export default Blog

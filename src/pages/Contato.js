@@ -1,3 +1,4 @@
+import { useState } from "react";
 // CSS
 import styles from "./Contato.module.css";
 // Components
@@ -7,15 +8,100 @@ import Endereco from "../assets/images/contatoendereco.svg";
 import Email from "../assets/images/contatoemail.svg";
 import Telefone from "../assets/images/contatotelefone.svg";
 import Destaque from "../assets/images/contatoimg.png";
-import { useState } from "react";
 
 const Contato = () => {
+  const stripHtml = (string) => string.replace(/(<([^>]+)>)/gi, "");
 
-  const [nome, setNome] = useState();
-  const [sobreNome, setSobreNome] = useState();
-  const [email, setEmail] = useState();
-
-  console.log(`Nome: ${nome}, Sobrenome: ${sobreNome}, Email: ${email}`);
+  const normalizeResponse = (url, response) => {
+      if (
+          url.match(/wp-json\/contact-form-7\/v1\/contact-forms\/\d+\/feedback/)
+      ) {
+          return normalizeContactForm7Response(response);
+      }
+  
+      if (url.match(/wp-json\/gf\/v2\/forms\/\d+\/submissions/)) {
+          return normalizeGravityFormsResponse(response);
+      }
+  
+      return {
+          isSuccess: false,
+          message: "Are you submitting to the right URL?",
+          validationError: {}
+      };
+  };
+  
+  const normalizeGravityFormsResponse = (response) => {
+      const isSuccess = response.is_valid;
+      const message = isSuccess
+          ? stripHtml(response.confirmation_message)
+          : "There was a problem with your submission.";
+      const validationError = isSuccess
+          ? {}
+          : Object.fromEntries(
+                Object.entries(
+                    response.validation_messages
+                ).map(([key, value]) => [`input_${key}`, value])
+            );
+  
+      return {
+          isSuccess,
+          message,
+          validationError
+      };
+  };
+  
+  const normalizeContactForm7Response = (response) => {
+      const isSuccess = response.status === "mail_sent";
+      const message = response.message;
+      const validationError = isSuccess
+          ? {}
+          : Object.fromEntries(
+                response.invalid_fields.map((error) => {
+                    const key = /cf7[-a-z]*.(.*)/.exec(error.into)[1];
+  
+                    return [key, error.message];
+                })
+            );
+  
+      return {
+          isSuccess,
+          message,
+          validationError
+      };
+  };
+  
+  const formSubmissionHandler = (event) => {
+      event.preventDefault();
+  
+      const formElement = event.target,
+          { action, method } = formElement,
+          body = new FormData(formElement);
+  
+      fetch(action, {
+          method,
+          body
+      })
+          .then((response) => response.json())
+          .then((response) => normalizeResponse(action, response))
+          .then((response) => {
+              alert(response.message);
+  
+              if (response.isSuccess) {
+                  formElement.reset();
+              }
+          })
+          .catch((error) => {
+              alert("Check the console for the error details.");
+              console.log(error);
+          });
+  };
+  
+  const formElements = document.querySelectorAll("form");
+  
+  formElements.forEach((formElement) =>
+      formElement.addEventListener("submit", formSubmissionHandler)
+  );
+  
 
   return (
     <section>
@@ -33,17 +119,17 @@ const Contato = () => {
             através do formulário abaixo, ou se preferir através dos nossos
             outros meios de comunicação.
           </h2>
-
-          <form>
+          <form
+            action="https://lightseg.com.br/lsapi/wp-json/contact-form-7/v1/contact-forms/33/feedback"
+            method="post"
+          >
             <div>
               <input
-                id="nome"
-                name="nome"
+                id="your-name"
+                name="your-name"
                 placeholder="Nome"
                 type="text"
                 required
-                value={nome}
-                onChange={(e) => setNome(e.target.value)}
               />
             </div>
             <div>
@@ -52,20 +138,15 @@ const Contato = () => {
                 name="sobrenome"
                 placeholder="Sobrenome"
                 type="text"
-                required
-                value={sobreNome}
-                onChange={(e) => setSobreNome(e.target.value)}
               />
             </div>
             <div>
               <input
-                id="email"
-                name="email"
+                id="your-email"
+                name="your-email"
                 placeholder="Email"
                 type="email"
                 required
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div>
@@ -74,13 +155,12 @@ const Contato = () => {
                 name="telefone"
                 placeholder="Telefone"
                 type="tel"
-                required
               />
             </div>
             <div id={styles.mensagem}>
               <textarea
-                id="mensagem"
-                name="mensagem"
+                id="your-message"
+                name="your-message"
                 rows="5"
                 cols="50"
                 placeholder="Digite sua mensagem"
@@ -90,8 +170,6 @@ const Contato = () => {
             <div className={styles.btn_enviar}>
               <input type="submit" value="Enviar" />
             </div>
-            <input type="hidden" name="_next" value="https://uol.com.br"></input>
-            <input type="hidden" name="_captcha" value="false"></input>
           </form>
         </div>
       </section>

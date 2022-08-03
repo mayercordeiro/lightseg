@@ -27,7 +27,7 @@ class HomeBlog extends React.Component {
 
           <section className={styles.posts}>
             {this.state.artigos.slice(0, 3).map((item) => (
-            <div className={styles.post_container}>
+            <div key={item.id} className={styles.post_container}>
               <div className={styles.post_imagem} style={{backgroundImage: `url('${item.acf.imagem.url}')`}}></div>
               <div className={styles.post_content}>
                 <div className={styles.post_title}><h1>{item.title.rendered}</h1></div>

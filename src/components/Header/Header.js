@@ -27,7 +27,6 @@ const Header = () => {
   });
 
   let location = useLocation();
-  console.log(location);
 
   return (
     <header>

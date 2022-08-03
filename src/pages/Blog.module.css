@@ -1,3 +1,10 @@
-.blog{
-    margin-top: 200px;
+.post {
+  background: #fff;
+  margin-top: 200px;
+  font-family: "Montserrat", sans-serif;
+  color: #0b3a5e;
+  background-image: url(../assets/images/bgabout.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: top;
 }
