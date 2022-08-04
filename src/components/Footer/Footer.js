@@ -93,6 +93,12 @@ const Footer = () => {
             <li>
               <NavLink to="/seguros">Vida</NavLink>
             </li>
+            <li>
+              <NavLink to="/post">TESTE POST</NavLink>
+            </li>
+            <li>
+              <NavLink to="/404error">404</NavLink>
+            </li>
           </ul>
         </div>
 

@@ -1,10 +1,83 @@
 .post {
   background: #fff;
-  margin-top: 200px;
   font-family: "Montserrat", sans-serif;
   color: #0b3a5e;
-  background-image: url(../assets/images/bgabout.png);
+  max-width: 1270px;
+  margin: 150px auto 10px auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.post_container {
+  width: 360px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(31,66,135,.3);
+  margin-bottom: 50px;
+}
+.post_imagem {
+  width: 100%;
+  height: 189px;
+  border-radius: 10px 10px 0 0;
   background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: top;
+  background-size: cover;
+  background-position: center;
+}
+.post_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+}
+.post_title {
+  display: flex;
+  align-items: center;
+  min-height: 56px;
+  margin: 12px 0;
+}
+.post_content > div > h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  
+}
+.post_content > p {
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  min-height: 75px;
+}
+.post_infos {
+  display: flex;
+  border-top: 1px solid #e1e1f0;
+  margin: 0px 20px;
+  padding: 20px  0;
+}
+.data {
+  position: relative;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+}
+.data:before {
+  content: '';
+  background-image: url(../assets/images/clock.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0;
 }

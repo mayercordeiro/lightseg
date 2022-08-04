@@ -1,0 +1,37 @@
+.notFound {
+  max-width: 1270px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 150px;
+}
+.notFound h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+  background: linear-gradient(
+    90deg,
+    #0b3a5e 27.89%,
+    #6f892e 59.54%,
+    #cdd400 79.49%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 3px;
+  margin: 50px auto;
+}
+.VoltarIniciaBotao {
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+}
+.VoltarIniciaBotao a {
+  padding: 15px 50px;
+  background-color: #0b3a5e;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 16px;
+  text-decoration: none;
+}

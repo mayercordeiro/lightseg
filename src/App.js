@@ -13,6 +13,8 @@ import Seguros from "./pages/Seguros";
 import Contato from "./pages/Contato";
 import Mensagem from "./pages/Mensagem";
 import Blog from "./pages/Blog";
+import Post from "./components/Post/Post";
+import PageNotFound from "./pages/PageNotFound";
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
           <Route path="/contato" element={<Contato />} />
           <Route path="/mensagem" element={<Mensagem />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/post" element={<Post />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />
       </BrowserRouter>
