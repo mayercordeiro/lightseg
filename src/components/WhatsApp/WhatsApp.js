@@ -10,8 +10,8 @@ const ReactApp = () => {
 			position="right"
 			widgetWidth="300px"
 			widgetWidthMobile="260px"
-			autoOpen={true}
-			autoOpenTimer={5000}
+			autoOpen={false}
+			autoOpenTimer={0}
 			messageBox={true}
 			messageBoxTxt="Oi, gostaria de..."
 			iconSize="55"
