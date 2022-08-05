@@ -1,4 +1,14 @@
-.post {
+.loading {
+  position: relative;
+  top: 150px;
+  display: flex;
+  align-items: center;
+}
+.loading img {
+  height: 100px;
+  margin: 50px auto;
+}
+.posts {
   background: #fff;
   font-family: "Montserrat", sans-serif;
   color: #0b3a5e;
@@ -36,6 +46,17 @@
   min-height: 56px;
   margin: 12px 0;
 }
+.post_title > a > h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
 .post_content > div > h1 {
   font-size: 1.4rem;
   font-weight: 700;
@@ -62,6 +83,7 @@
 }
 .post_infos {
   display: flex;
+  justify-content: space-between;
   border-top: 1px solid #e1e1f0;
   margin: 0px 20px;
   padding: 20px  0;
@@ -80,4 +102,12 @@
   width: 20px;
   height: 20px;
   left: 0;
+}
+.leiamais {
+  display: flex;
+  align-items: center;
+  background-color: #0b3a5e;
+  padding: 4px 30px;
+  border-radius: 10px;
+  color: #FFF;
 }

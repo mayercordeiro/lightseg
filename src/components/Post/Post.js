@@ -4,33 +4,55 @@ import { useParams } from "react-router-dom";
 import styles from "./Post.module.css";
 // Components
 import Breadcrumbs from "../Breadcrumb/Breadcrumbs";
-import axios from "axios";
+// Images
+import Clock from "../../assets/images/clock.svg";
+import Loading from "../../assets/images/loading.svg";
 
 const Post = () => {
   const { id } = useParams();
   const url = `https://lightseg.com.br/lsapi/wp-json/wp/v2/artigos/${id}`;
-  const [post, setPost] = useState({});
+  const [post, setPost] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     async function fecthData() {
+      setLoading(true);
+
       const res = await fetch(url);
-
       const data = await res.json();
-
       setPost(data);
-    }
+
+      setLoading(false);
+    };
+
     fecthData();
   }, []);
-
-  console.log(post);
 
   return (
     <section>
       <Breadcrumbs titulo={post.title?.rendered} />
+      {loading && (
+        <div className={styles.loading}>
+          <img src={Loading} />
+        </div>
+      )}
       <section className={styles.singlePost}>
-        <p>ID do Post: {id}</p>
-        <p>ID do Post: {post.link}</p>
-        <p>ID do Post: {post.acf?.resumo}</p>
+        <div className={styles.post_left}>
+          <div
+            className={styles.post_imagem}
+            style={{ backgroundImage: `url('${post.acf?.imagem?.url}')` }}
+          ></div>
+          <div className={styles.data}>
+            <img src={Clock} />
+            <p>{post.acf?.data}</p>
+          </div>
+        </div>
+
+        <div className={styles.post_right}>
+          <div
+            dangerouslySetInnerHTML={{ __html: `${post.content?.rendered}` }}
+          />
+        </div>
       </section>
     </section>
   );

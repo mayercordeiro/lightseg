@@ -1,3 +1,13 @@
+.loading {
+  position: relative;
+  display: flex;
+  align-items: center;
+  grid-column: 2 / 5;
+}
+.loading img {
+  height: 100px;
+  margin: 50px auto;
+}
 .blog {
   display: grid;
   margin: 0 auto;
@@ -88,13 +98,14 @@
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  line-clamp: 3;
-  -webkit-line-clamp: 3;
+  line-clamp: 4;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   min-height: 75px;
 }
 .post_infos {
   display: flex;
+  justify-content: space-between;
   border-top: 1px solid #e1e1f0;
   margin: 0px 20px;
   padding: 20px 0;
@@ -126,6 +137,14 @@
   font-weight: bold;
   border-radius: 16px;
   text-decoration: none;
+}
+.leiamais {
+  display: flex;
+  align-items: center;
+  background-color: #0b3a5e;
+  padding: 4px 30px;
+  border-radius: 10px;
+  color: #FFF;
 }
 @media screen and (max-width: 1480px) {
   .blog {

@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import styles from "./Contato.module.css";
 // Components
 import Breadcrumbs from "../components/Breadcrumb/Breadcrumbs";
-import axios from "axios";
 // Images
 import Endereco from "../assets/images/contatoendereco.svg";
 import Email from "../assets/images/contatoemail.svg";

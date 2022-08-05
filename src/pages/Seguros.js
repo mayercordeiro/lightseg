@@ -21,7 +21,7 @@ const Seguros = () => {
       <h2></h2>
       <section className={styles.seguros}>
         <h1>Confira Nossas Soluçoes em Seguros</h1>
-        <h2>Saiba mais sobre os nossos diferentes tipos de seguro e Cote Agora! proteja o futuro financeiro da sua empresa, seu e de sua família.</h2>
+        <h2>Saiba mais sobre os nossos diferentes tipos de seguro e Cote Agora! Proteja o futuro financeiro da sua empresa, seu e de sua família.</h2>
         <div className={styles.segurosMain}>
           <div
             className={`${styles.segurosContainer} ${styles.bkg_transporte_cargas}`}
