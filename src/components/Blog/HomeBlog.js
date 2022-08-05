@@ -38,7 +38,9 @@ class HomeBlog extends React.Component {
               ></div>
               <div className={styles.post_content}>
                 <div className={styles.post_title}>
-                  <h1>{item.title.rendered}</h1>
+                  <NavLink to={`/post/${item.id}`}>
+                    <h1>{item.title.rendered}</h1>
+                  </NavLink>
                 </div>
                 <p>{item.acf.resumo}</p>
               </div>

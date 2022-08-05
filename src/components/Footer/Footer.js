@@ -6,8 +6,6 @@ import styles from "./Footer.module.css";
 import LogoFooter from "../../assets/images/logo-footer.svg";
 import Instagram from "../../assets/images/instagram.svg";
 import Facebook from "../../assets/images/facebook.svg";
-// Components
-import WhatsApp from "../WhatsApp/WhatsApp";
 
 const Footer = () => {
   return (
@@ -124,7 +122,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <WhatsApp />
     </footer>
   );
 };

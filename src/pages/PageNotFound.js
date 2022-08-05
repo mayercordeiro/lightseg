@@ -12,7 +12,7 @@ const PageNotFound = () => {
         <h1>Parece que você está perdido no espaço!</h1>
         <img src={notFound} />
         <div className={styles.VoltarIniciaBotao}>
-            <NavLink to="/blog">Voltar à Página Inicial</NavLink>
+            <NavLink to="/">Voltar à Página Inicial</NavLink>
           </div>
     </section>
   )

@@ -67,7 +67,10 @@
   min-height: 56px;
   margin: 12px 0;
 }
-.post_content > div > h1 {
+.post_title > a {
+  text-decoration: none;
+}
+.post_title > a > h1 {
   font-size: 1.4rem;
   font-weight: 700;
   text-align: center;
