@@ -56,7 +56,7 @@ const Header = () => {
                     <Nav.Link href="/">Home</Nav.Link>
                   </NavLink>
                   <NavLink to="/sobre">
-                    <Nav.Link href="/sobre">Sobre</Nav.Link>
+                    <Nav.Link href="/seguros">Sobre</Nav.Link>
                   </NavLink>
                   <NavLink to="/seguros">
                     <Nav.Link href="/seguros">Seguros</Nav.Link>
@@ -68,7 +68,9 @@ const Header = () => {
                     <Nav.Link href="/sobre">Contato</Nav.Link>
                   </NavLink>
                   <NavLink to="/seguros">
-                    <Nav.Link id="cote" href="/sobre">Cote Agora!</Nav.Link>
+                    <Nav.Link id="cote" href="/sobre">
+                      Cote Agora!
+                    </Nav.Link>
                   </NavLink>
                 </Nav>
               </Offcanvas.Body>

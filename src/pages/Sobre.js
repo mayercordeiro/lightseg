@@ -50,9 +50,6 @@ const Sobre = () => {
                   </div>
                 </ul>
               </div>
-              <div className="caminhao">
-                <img src={Truck} />
-              </div>
             </Tab>
             <Tab eventKey="profile" title="Missão">
               <div className="tabs_textos">

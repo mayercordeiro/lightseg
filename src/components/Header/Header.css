@@ -8,6 +8,9 @@ header {
 #menuPages a {
     color: #0c3b5e;
 }
+#menuPages a:hover {
+    color: #979797;
+}
 .scrollOff {
     padding: 0px 80px;
 }
@@ -85,6 +88,15 @@ header {
     margin-right: 0;
     padding: 8px 12px;
     color: #0c3b5e;
+}
+#cote a:hover {
+    color: #FFF !important;
+}
+.nav-link:focus, .nav-link:hover {
+    color: #DADE30;
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: unset;
 }
 @media screen and (max-width: 1199px) {
     .navbar-nav {

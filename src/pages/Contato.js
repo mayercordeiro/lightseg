@@ -10,7 +10,31 @@ import Telefone from "../assets/images/contatotelefone.svg";
 import Destaque from "../assets/images/contatoimg.png";
 
 const Contato = () => {
-  const url = "https://lightseg.com.br/lsapi/wp-json/contact-form-7/v1/contact-forms/33/feedback";
+  const url = "https://lightseg.com.br/lsapi/wp-json/contact-form-7/v1/contact-forms/33/feedback/";
+
+  const [yourname, setYourname] = useState("");
+  const [surname, setSurname] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+
+    const data = {
+      yourname,
+    }
+
+    const res = await fetch(url, {
+      method: "POST",
+      headers: {
+        'Content-Type': 'multipart/form-data',
+      },
+      body: JSON.stringify(data),
+    });
+
+    console.log(data);
+  };
 
   return (
     <section>
@@ -29,54 +53,66 @@ const Contato = () => {
             outros meios de comunicação.
           </h2>
 
-          <form>
+          <form onSubmit={handleSubmit}>
             <div>
               <input
-                id="your_name"
-                name="your_name"
+                id="yourname"
+                name="yourname"
+                value={yourname}
                 placeholder="Nome"
                 type="text"
+                onChange={(e) => setYourname(e.target.value)}
               />
             </div>
             <div>
               <input
-                id="sobrenome"
-                name="sobrenome"
+                id="surname"
+                name="surname"
+                value={surname}
                 placeholder="Sobrenome"
                 type="text"
+                onChange={(e) => setSurname(e.target.value)}
               />
             </div>
             <div>
               <input
-                id="your_email"
-                name="your_email"
+                id="email"
+                name="email"
+                value={email}
                 placeholder="Email"
                 type="email"
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div>
               <input
-                id="telefone"
-                name="telefone"
+                id="phone"
+                name="phone"
+                value={phone}
                 placeholder="Telefone"
                 type="tel"
+                onChange={(e) => setPhone(e.target.value)}
               />
             </div>
             <div id={styles.mensagem}>
               <textarea
-                id="your_message"
-                name="your_message"
+                id="message"
+                name="message"
+                value={message}
                 rows="5"
                 cols="50"
                 placeholder="Digite sua mensagem"
+                onChange={(e) => setMessage(e.target.value)}
               ></textarea>
             </div>
             <div className={styles.btn_enviar}>
               <input type="submit" value="Enviar" />
             </div>
           </form>
+
         </div>
       </section>
+      
       {/* INFORMAÇÕES DE CONTATO */}
       <div className={styles.infos}>
         <div className={styles.infosContainer}>
