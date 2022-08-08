@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import axios from "axios";
 // CSS
 import styles from "./Contato.module.css";
 // Components
@@ -10,7 +11,8 @@ import Telefone from "../assets/images/contatotelefone.svg";
 import Destaque from "../assets/images/contatoimg.png";
 
 const Contato = () => {
-  const url = "https://lightseg.com.br/lsapi/wp-json/contact-form-7/v1/contact-forms/33/feedback/";
+  const url =
+    "https://lightseg.com.br/lsapi/wp-json/contact-form-7/v1/contact-forms/33/feedback/";
 
   const [yourname, setYourname] = useState("");
   const [surname, setSurname] = useState("");
@@ -18,22 +20,31 @@ const Contato = () => {
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
 
+  const [loading, setLoading] = useState(false);
+
+  let formData = new FormData();
+  formData.append("yourname", yourname);
+  formData.append("surname", surname);
+  formData.append("email", email);
+  formData.append("phone", phone);
+  formData.append("message", message);
+
+  const config = {
+    method: "POST",
+    headers: { "content-type": "multipart/form-data" },
+  };
+
   const handleSubmit = async (e) => {
-    e.preventDefault()
-
-    const data = {
-      yourname,
-    }
-
-    const res = await fetch(url, {
-      method: "POST",
-      headers: {
-        'Content-Type': 'multipart/form-data',
-      },
-      body: JSON.stringify(data),
-    });
-
-    console.log(data);
+    e.preventDefault();
+    axios
+      .post(url, formData, config)
+      .then((response) => {
+        alert("Obrigado, Sua mensagem foi enviada com sucesso!");
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   return (
@@ -62,6 +73,7 @@ const Contato = () => {
                 placeholder="Nome"
                 type="text"
                 onChange={(e) => setYourname(e.target.value)}
+                required
               />
             </div>
             <div>
@@ -72,6 +84,7 @@ const Contato = () => {
                 placeholder="Sobrenome"
                 type="text"
                 onChange={(e) => setSurname(e.target.value)}
+                required
               />
             </div>
             <div>
@@ -82,6 +95,7 @@ const Contato = () => {
                 placeholder="Email"
                 type="email"
                 onChange={(e) => setEmail(e.target.value)}
+                required
               />
             </div>
             <div>
@@ -92,6 +106,7 @@ const Contato = () => {
                 placeholder="Telefone"
                 type="tel"
                 onChange={(e) => setPhone(e.target.value)}
+                required
               />
             </div>
             <div id={styles.mensagem}>
@@ -103,16 +118,18 @@ const Contato = () => {
                 cols="50"
                 placeholder="Digite sua mensagem"
                 onChange={(e) => setMessage(e.target.value)}
+                required
               ></textarea>
             </div>
-            <div className={styles.btn_enviar}>
-              <input type="submit" value="Enviar" />
-            </div>
+            {!loading && (
+              <div className={styles.btn_enviar}>
+                <input type="submit" value="Enviar" />
+              </div>
+            )}
           </form>
-
         </div>
       </section>
-      
+
       {/* INFORMAÇÕES DE CONTATO */}
       <div className={styles.infos}>
         <div className={styles.infosContainer}>
