@@ -212,9 +212,14 @@ textarea {
   .contato {
     margin-top: 150px;
   }
-  .contatoForm form div {
-    width: 50%;
+  .contatoForm > form > div {
     box-sizing: border-box;
     padding: 10px 5px;
+  }
+  .sucess {
+    margin: 10px 6px;
+  }
+  .error {
+    margin: 10px 6px;
   }
 }
