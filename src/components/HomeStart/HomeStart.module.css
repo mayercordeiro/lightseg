@@ -72,7 +72,7 @@
   height: 100%;
 }
 .botaoseguros {
-  background-image: linear-gradient(rgb(212, 219, 7), #cdd400);
+  background-color: #dade30;
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
   border-radius: 4px;
   color: #0b3a5e;
@@ -89,6 +89,13 @@
   transition: 0.3s;
   text-decoration: none !important;
   text-align: center;
+  transition: all .7s ease;
+}
+.botaoseguros:hover {
+  background-image: unset;
+  background-color: #0b3a5e;
+  color: #FFF;
+  transition: all .7s ease;
 }
 @media screen and (max-width: 1329px) {
   .intro p {

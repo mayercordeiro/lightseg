@@ -108,6 +108,12 @@
   align-items: center;
   background-color: #0b3a5e;
   padding: 4px 30px;
-  border-radius: 10px;
+  border-radius: 6px;
   color: #FFF;
+  transition: all .7s ease;
+}
+.leiamais:hover {
+  background-color: #dade30;
+  color: #0b3a5e;
+  transition: all .7s ease;
 }

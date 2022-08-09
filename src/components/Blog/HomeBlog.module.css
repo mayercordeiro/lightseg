@@ -81,6 +81,7 @@
   text-decoration: none;
 }
 .post_title > a > h1 {
+  color: #0b3a5e;
   font-size: 1.4rem;
   font-weight: 700;
   text-align: center;
@@ -129,7 +130,7 @@
   width: 100%;
   text-align: center;
 }
-.VerTodosBotao a {
+.VerTodosBotao span {
   padding: 15px 50px;
   background-color: #0b3a5e;
   font-size: 1rem;
@@ -137,14 +138,26 @@
   font-weight: bold;
   border-radius: 16px;
   text-decoration: none;
+  transition: all .7s ease;
+}
+.VerTodosBotao span:hover {
+  background-color: #0b3a5e;
+  color: #fff !important;
+  transition: all .7s ease;
 }
 .leiamais {
   display: flex;
   align-items: center;
   background-color: #0b3a5e;
   padding: 4px 30px;
-  border-radius: 10px;
+  border-radius: 6px;
   color: #FFF;
+  transition: all .7s ease;
+}
+.leiamais:hover {
+  background-color: #dade30;
+  color: #0b3a5e;
+  transition: all .7s ease;
 }
 @media screen and (max-width: 1480px) {
   .blog {

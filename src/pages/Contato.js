@@ -9,6 +9,8 @@ import Endereco from "../assets/images/contatoendereco.svg";
 import Email from "../assets/images/contatoemail.svg";
 import Telefone from "../assets/images/contatotelefone.svg";
 import Destaque from "../assets/images/contatoimg.png";
+import Check from "../assets/images/check.svg";
+import Loading from "../assets/images/loading.svg";
 
 const Contato = () => {
   const url =
@@ -20,14 +22,14 @@ const Contato = () => {
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
 
-  const [loading, setLoading] = useState(false);
-
   let formData = new FormData();
   formData.append("yourname", yourname);
   formData.append("surname", surname);
   formData.append("email", email);
   formData.append("phone", phone);
   formData.append("message", message);
+
+  const [displaySucess, setDisplaySucess] = useState(true);
 
   const config = {
     method: "POST",
@@ -39,12 +41,18 @@ const Contato = () => {
     axios
       .post(url, formData, config)
       .then((response) => {
-        alert("Obrigado, Sua mensagem foi enviada com sucesso!");
-        console.log(response);
+        setDisplaySucess(false);
+        // Reset Fields
+        setYourname("");
+        setSurname("");
+        setEmail("");
+        setPhone("");
+        setMessage("");
       })
       .catch((error) => {
         console.log(error);
       });
+
   };
 
   return (
@@ -121,11 +129,25 @@ const Contato = () => {
                 required
               ></textarea>
             </div>
-            {!loading && (
-              <div className={styles.btn_enviar}>
-                <input type="submit" value="Enviar" />
+
+
+{/*<div className={styles.loading}>
+<img src={Loading} />
+</div>*/}
+
+            <div className={styles.btn_enviar}>
+              <input type="submit" value="Enviar" />
+            </div>
+
+            <div className={`${styles.sucess} ${displaySucess ? styles.displaySucess : ""}`}>
+              <div>
+                <img src={Check} />
               </div>
-            )}
+              <div>
+                <p>Agradecemos sua mensagem, logo retornaremos!</p>
+              </div>
+            </div>
+
           </form>
         </div>
       </section>
