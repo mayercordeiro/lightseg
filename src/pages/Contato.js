@@ -10,7 +10,8 @@ import Email from "../assets/images/contatoemail.svg";
 import Telefone from "../assets/images/contatotelefone.svg";
 import Destaque from "../assets/images/contatoimg.png";
 import Check from "../assets/images/check.svg";
-import Loading from "../assets/images/loading.svg";
+import Error from "../assets/images/error.svg";
+import ImageLoading from "../assets/images/loading.svg";
 
 const Contato = () => {
   const url =
@@ -29,15 +30,23 @@ const Contato = () => {
   formData.append("phone", phone);
   formData.append("message", message);
 
-  const [displaySucess, setDisplaySucess] = useState(true);
-
   const config = {
     method: "POST",
     headers: { "content-type": "multipart/form-data" },
   };
 
+  // Email Messages
+  const [displaySucess, setDisplaySucess] = useState(true);
+  const [displayError, setDisplayError] = useState(true);
+
+  // Loading
+  const [loading, setLoading] = useState(false);
+  const [button, setButton] = useState(true);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
+    setButton(false);
     axios
       .post(url, formData, config)
       .then((response) => {
@@ -50,9 +59,18 @@ const Contato = () => {
         setMessage("");
       })
       .catch((error) => {
-        console.log(error);
+        setDisplayError(false);
+        // Reset Fields
+        setYourname("");
+        setSurname("");
+        setEmail("");
+        setPhone("");
+        setMessage("");
+      })
+      .finally(() => {
+        setLoading(false);
+        setButton(true);
       });
-
   };
 
   return (
@@ -129,25 +147,43 @@ const Contato = () => {
                 required
               ></textarea>
             </div>
-
-
-{/*<div className={styles.loading}>
-<img src={Loading} />
-</div>*/}
-
-            <div className={styles.btn_enviar}>
+            {/* LOADING */}
+            <div className={loading ? styles.loadingTrue : styles.loading}>
+              <img src={ImageLoading} />
+            </div>
+            {/* LOADING */}
+            <div className={button ? styles.btn_enviar : styles.btn_enviarOff}>
               <input type="submit" value="Enviar" />
             </div>
 
-            <div className={`${styles.sucess} ${displaySucess ? styles.displaySucess : ""}`}>
+            <div
+              className={`${styles.sucess} ${
+                displaySucess ? styles.displaySucess : ""
+              }`}
+            >
               <div>
                 <img src={Check} />
               </div>
               <div>
-                <p>Agradecemos sua mensagem, logo retornaremos!</p>
+                <p>Agradecemos a sua mensagem, logo retornaremos.</p>
               </div>
             </div>
 
+            <div
+              className={`${styles.error} ${
+                displayError ? styles.displayError : ""
+              }`}
+            >
+              <div>
+                <img src={Error} />
+              </div>
+              <div>
+                <p>
+                  Ocorreu um erro ao tentar enviar sua mensagem. Tente novamente
+                  mais tarde.
+                </p>
+              </div>
+            </div>
           </form>
         </div>
       </section>
@@ -156,7 +192,7 @@ const Contato = () => {
       <div className={styles.infos}>
         <div className={styles.infosContainer}>
           <div className={styles.infosImg}>
-            <img src={Endereco} alt="" srcset="" />
+            <img src={Endereco} />
           </div>
           <div className={styles.infosTexts}>
             <h2>Nosso Endereço:</h2>
@@ -166,7 +202,7 @@ const Contato = () => {
         </div>
         <div className={styles.middle}>
           <div className={styles.infosImg}>
-            <img src={Email} alt="" srcset="" />
+            <img src={Email} />
           </div>
           <div className={styles.infosTexts}>
             <h2>Email:</h2>
@@ -175,7 +211,7 @@ const Contato = () => {
         </div>
         <div className={styles.right}>
           <div className={styles.infosImg}>
-            <img src={Telefone} alt="" srcset="" />
+            <img src={Telefone} />
           </div>
           <div className={styles.infosTexts}>
             <h2>Telefone:</h2>

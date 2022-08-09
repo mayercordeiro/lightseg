@@ -47,6 +47,7 @@
   margin: 12px 0;
 }
 .post_title > a > h1 {
+  color: #0b3a5e;
   font-size: 1.4rem;
   font-weight: 700;
   text-align: center;
@@ -116,4 +117,21 @@
   background-color: #dade30;
   color: #0b3a5e;
   transition: all .7s ease;
+}
+@media screen and (max-width: 1300px) {
+  .posts {
+    margin: 150px 16px 10px 16px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .posts {
+    justify-content: center;
+    gap: 50px;
+  }
+  .post_container {
+    margin-bottom: unset;
+  }
+  .post_container:last-child {
+    margin-bottom: 50px;
+  }
 }
