@@ -2,10 +2,11 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 // CSS
-import styles from "./Modal.module.css"
+import styles from "./Modal.module.css";
 // Images
-import Car from "../../assets/images/car.svg"
+import Car from "../../assets/images/car.svg";
 // Components
+import FormAuto from "../Forms/FormAuto";
 
 function MyVerticallyCenteredModalAuto(props) {
   return (
@@ -15,11 +16,9 @@ function MyVerticallyCenteredModalAuto(props) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton>
-      </Modal.Header>
+      <Modal.Header closeButton></Modal.Header>
       <Modal.Body>
-        {/*<TransporteForm />*/}
-        <h1>Auto</h1>
+        <FormAuto titulo="Cotação Seguro Auto" />
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide}>Fechar</Button>

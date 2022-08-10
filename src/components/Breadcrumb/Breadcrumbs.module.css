@@ -1,32 +1,36 @@
 .breadcrumb {
-    background: #FFF;
-    align-items: center;
-    background-image: url(../../assets/images/background-breadcrumb.jpg);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    height: 220px;
-    justify-content: center;
-    position: relative;
-    top: 100px;
+  background: #fff;
+  align-items: center;
+  background-image: url(../../assets/images/background-breadcrumb.jpg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 220px;
+  justify-content: center;
+  position: relative;
+  top: 100px;
 }
 .breadcrumb h1 {
-    max-width: 700px;
-    color: #fff;
-    font-size: 3rem;
-    font-weight: 700;
-    text-shadow: 3px 3px 5px #000;
-    text-align: center;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    line-clamp: 2;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+  max-width: 700px;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 3px 3px 5px #000;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 @media screen and (max-width: 699px) {
-    .breadcrumb {
-        background-position: 35%
-    }
+  .breadcrumb {
+    background-position: 35%;
+  }
+  .breadcrumb h1 {
+    font-size: 2rem;
+    margin: 0 16px;
+  }
 }

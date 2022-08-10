@@ -4,6 +4,7 @@ import Modal from "react-bootstrap/Modal";
 // CSS
 import styles from "./ModalSeguros.module.css"
 // Components
+import FormGeral from "../Forms/FormGeral";
 
 const MyVerticallyCenteredModal = (props) => {
   return (
@@ -16,7 +17,7 @@ const MyVerticallyCenteredModal = (props) => {
       <Modal.Header closeButton>
       </Modal.Header>
       <Modal.Body>
-        FORM AFFINITY
+        <FormGeral titulo="Cotação Seguro Affinity" />
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide}>Fechar</Button>

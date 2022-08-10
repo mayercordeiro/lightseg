@@ -6,6 +6,7 @@ import styles from "./Modal.module.css";
 // Images
 import Vida from "../../assets/images/vida.svg";
 // Components
+import FormGeral from "../Forms/FormGeral";
 
 function MyVerticallyCenteredModalVida(props) {
   return (
@@ -17,8 +18,7 @@ function MyVerticallyCenteredModalVida(props) {
     >
       <Modal.Header closeButton></Modal.Header>
       <Modal.Body>
-        {/*<TransporteForm />*/}
-        <h1>Vida</h1>
+        <FormGeral titulo="Cotação Seguro de Vida" />
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide}>Fechar</Button>

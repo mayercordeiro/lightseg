@@ -134,6 +134,10 @@ a:hover {
 	width: unset !important;
 	padding: 0 5px !important;
 }
+.btn-primary {
+  --bs-btn-bg: #0b3a5e !important;
+  --bs-btn-border-color: #0b3a5e !important;
+}
 @media screen and (max-width: 499px) {
   .carousel-item {
     height: 450px;

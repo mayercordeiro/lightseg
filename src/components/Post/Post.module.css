@@ -24,6 +24,7 @@
 .post_right {
   max-width: 50%;
   padding: 0 0 0 20px;
+  word-break: break-word;
 }
 .post_right > div > p {
   font-size: 1.3rem;
@@ -74,6 +75,13 @@
   }
   .data {
     width: unset;
+    max-width: 380px;
+  }
+  .post_right {
+    max-width: 380px;
+    padding: 0;
+  }
+  .post_right > div > p > a {
     max-width: 380px;
   }
 }

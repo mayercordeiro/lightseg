@@ -2,9 +2,9 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 // CSS
-import styles from "./Modal.module.css"
+import styles from "./Modal.module.css";
 // Images
-import Truck from "../../assets/images/truck.svg"
+import Truck from "../../assets/images/truck.svg";
 // Components
 import TransporteForm from "../Forms/TransporteForm";
 
@@ -16,10 +16,9 @@ function MyVerticallyCenteredModal(props) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton>
-      </Modal.Header>
+      <Modal.Header closeButton></Modal.Header>
       <Modal.Body>
-        <TransporteForm />
+        <h1>Teste</h1>
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide}>Fechar</Button>
