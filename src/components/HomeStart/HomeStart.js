@@ -3,12 +3,17 @@ import styles from "./HomeStart.module.css";
 // Router
 import { NavLink } from "react-router-dom";
 // Components
-import Modal from "../Modal/Modal";
-import ModalAuto from "../Modal/ModalAuto";
-import ModalVida from "../Modal/ModalVida";
-import ModalResidencial from "../Modal/ModalResidencial";
-import ModalAffinity from "../Modal/ModalAffinity";
 import Carousel from "react-bootstrap/Carousel";
+import OpenModal from "../Modal/OpenModal";
+// Images
+import Truck from "../../assets/images/truck.svg";
+import Car from "../../assets/images/car.svg";
+import Vida from "../../assets/images/vida.svg";
+import House from "../../assets/images/house.svg";
+import People from "../../assets/images/people.svg";
+// Forms
+import FormGeral from "../Forms/FormGeral";
+import FormAuto from "../Forms/FormAuto";
 
 const HomeStart = () => {
   return (
@@ -28,15 +33,42 @@ const HomeStart = () => {
         <Carousel id={styles.slide} variant="dark">
           <Carousel.Item>
             <div className={styles.slideseguros}>
-              <Modal />
-              <ModalAuto />
-              <ModalVida />
+              <OpenModal
+                estilo="botaoModal"
+                imagemBtn={Truck}
+                tituloBtn="Transporte de Cargas"
+                form={
+                  <FormGeral titulo="Cotação Seguro Transporte de Cargas" />
+                }
+              />
+              <OpenModal
+                estilo="botaoModal"
+                imagemBtn={Car}
+                tituloBtn="Seguro Auto"
+                form={<FormAuto titulo="Cotação Seguro Auto" />}
+              />
+              <OpenModal
+                estilo="botaoModal"
+                imagemBtn={Vida}
+                tituloBtn="Seguro de Vida"
+                form={<FormGeral titulo="Cotação Seguro de Vida" />}
+              />
             </div>
           </Carousel.Item>
           <Carousel.Item>
-          <div className={styles.slideseguros}>
-            <ModalResidencial />
-            <ModalAffinity />
+            <div className={styles.slideseguros}>
+              <OpenModal
+                estilo="botaoModal"
+                imagemBtn={House}
+                tituloBtn="Seguro Residencial"
+                form={<FormGeral titulo="Cotação Seguro Residencial" />}
+              />
+              <OpenModal
+                estilo="botaoModal"
+                imagemBtn={People}
+                tituloBtn="Affinity"
+                form={<FormGeral titulo="Cotação Seguro Affinity" />}
+              />
             </div>
           </Carousel.Item>
         </Carousel>

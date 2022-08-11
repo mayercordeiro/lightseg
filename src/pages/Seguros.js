@@ -2,16 +2,10 @@
 import styles from "./Seguros.module.css";
 // Components
 import Breadcrumbs from "../components/Breadcrumb/Breadcrumbs";
-import ModalSeguros from "../components/ModalSeguros/ModalSeguros";
-import ModalSegurosText from "../components/ModalSeguros/ModalSegurosText";
-import ModalAuto from "../components/ModalSeguros/ModalAuto";
-import ModalAutoText from "../components/ModalSeguros/ModalAutoText";
-import ModalVida from "../components/ModalSeguros/ModalVida";
-import ModalVidaText from "../components/ModalSeguros/ModalVidaText";
-import ModalResidencial from "../components/ModalSeguros/ModalResidencial";
-import ModalResidencialText from "../components/ModalSeguros/ModalResidencialText";
-import ModalAffinity from "../components/ModalSeguros/ModalAffinity";
-import ModalAffinityText from "../components/ModalSeguros/ModalAffinityText";
+import OpenModal from "../components/Modal/OpenModal";
+// Forms
+import FormGeral from "../components/Forms/FormGeral";
+import FormAuto from "../components/Forms/FormAuto";
 
 const Seguros = () => {
   return (
@@ -21,7 +15,11 @@ const Seguros = () => {
       <h2></h2>
       <section className={styles.seguros}>
         <h1>Confira Nossas Soluçoes em Seguros</h1>
-        <h2>Saiba mais sobre os nossos diferentes tipos de seguro e Cote Agora! Proteja o futuro financeiro da sua empresa, seu e de sua família.</h2>
+        <h2>
+          Saiba mais sobre os nossos diferentes tipos de seguro e Cote Agora!
+          Proteja o futuro financeiro da sua empresa, seu e de sua família.
+        </h2>
+
         <div className={styles.segurosMain}>
           <div
             className={`${styles.segurosContainer} ${styles.bkg_transporte_cargas}`}
@@ -29,32 +27,52 @@ const Seguros = () => {
             <h2>Transporte de Cargas</h2>
           </div>
           <div className={styles.segurosLinks}>
-            <ModalSegurosText />
-            <ModalSeguros />
+            <OpenModal
+              estilo="botaoModalSaibaMais"
+              tituloBtn="Saiba Mais"
+              form="Em breve..."
+            />
+            <OpenModal
+              estilo="botaoModalSeguros"
+              tituloBtn="Cote Agora!"
+              form={<FormGeral titulo="Cotação Seguro Transporte de Cargas" />}
+            />
           </div>
         </div>
-        
+
         <div className={styles.segurosMainRight}>
-          <div
-            className={`${styles.segurosContainer} ${styles.bkg_auto}`}
-          >
+          <div className={`${styles.segurosContainer} ${styles.bkg_auto}`}>
             <h2>Auto</h2>
           </div>
           <div className={styles.segurosLinks}>
-            <ModalAutoText />
-            <ModalAuto />
+            <OpenModal
+              estilo="botaoModalSaibaMais"
+              tituloBtn="Saiba Mais"
+              form="Em breve..."
+            />
+            <OpenModal
+              estilo="botaoModalSeguros"
+              tituloBtn="Cote Agora!"
+              form={<FormAuto titulo="Cotação Seguro Auto" />}
+            />
           </div>
         </div>
 
         <div className={styles.segurosMain}>
-          <div
-            className={`${styles.segurosContainer} ${styles.bkg_vida}`}
-          >
+          <div className={`${styles.segurosContainer} ${styles.bkg_vida}`}>
             <h2>Vida</h2>
           </div>
           <div className={styles.segurosLinks}>
-            <ModalVidaText />
-            <ModalVida />
+            <OpenModal
+              estilo="botaoModalSaibaMais"
+              tituloBtn="Saiba Mais"
+              form="Em breve..."
+            />
+            <OpenModal
+              estilo="botaoModalSeguros"
+              tituloBtn="Cote Agora!"
+              form={<FormGeral titulo="Cotação Seguro de Vida" />}
+            />
           </div>
         </div>
 
@@ -65,20 +83,34 @@ const Seguros = () => {
             <h2>Residencial</h2>
           </div>
           <div className={styles.segurosLinks}>
-            <ModalResidencialText />
-            <ModalResidencial />
+            <OpenModal
+              estilo="botaoModalSaibaMais"
+              tituloBtn="Saiba Mais"
+              form="Em breve..."
+            />
+            <OpenModal
+              estilo="botaoModalSeguros"
+              tituloBtn="Cote Agora!"
+              form={<FormGeral titulo="Cotação Seguro Residencial" />}
+            />
           </div>
         </div>
 
         <div className={styles.segurosMain}>
-          <div
-            className={`${styles.segurosContainer} ${styles.bkg_affinity}`}
-          >
+          <div className={`${styles.segurosContainer} ${styles.bkg_affinity}`}>
             <h2>Affinity</h2>
           </div>
           <div className={styles.segurosLinks}>
-            <ModalAffinityText />
-            <ModalAffinity />
+            <OpenModal
+              estilo="botaoModalSaibaMais"
+              tituloBtn="Saiba Mais"
+              form="Em breve..."
+            />
+            <OpenModal
+              estilo="botaoModalSeguros"
+              tituloBtn="Cote Agora!"
+              form={<FormGeral titulo="Cotação Seguro Affinity" />}
+            />
           </div>
         </div>
       </section>

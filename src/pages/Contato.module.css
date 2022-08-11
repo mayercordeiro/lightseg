@@ -147,10 +147,17 @@ textarea {
   font-weight: 700;
   text-align: unset;
 }
-.infosTexts p {
+.infosTexts > p {
   font-size: 1.2rem;
   margin-top: 2px;
   margin-bottom: 0px;
+}
+.infosTexts > a {
+  font-size: 1.2rem;
+  margin-top: 2px;
+  margin-bottom: 0px;
+  color: #0b3a5e;
+  text-decoration: none;
 }
 .middle {
   display: flex;

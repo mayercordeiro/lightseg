@@ -7,9 +7,6 @@ import Truck from "../assets/images/trucksobre.svg";
 // Tabs
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
-// Components
-
-import Instagram from "../assets/images/instagram.svg";
 
 const Sobre = () => {
   return (

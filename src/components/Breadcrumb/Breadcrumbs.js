@@ -1,9 +1,9 @@
 // CSS
-import styles from './Breadcrumbs.module.css';
+import './Breadcrumbs.css';
 
 const Breadcrumbs = (props) => {
   return (
-    <section className={styles.breadcrumb}>
+    <section id={props.tituloBlog} className="breadcrumb">
         <h1>{props.titulo}</h1>
     </section>
   )

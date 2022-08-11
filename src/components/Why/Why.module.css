@@ -106,13 +106,11 @@
         margin: 50px 40px 0px 40px;
     }
 }
-
 @media screen and (max-width: 1125px) {
     .whyContentText {
         margin: 28px 20px 0px 4px;
     }
 }
-
 @media screen and (max-width: 949px) {
     .why {
         grid-template-columns: minmax(60px, auto) repeat(3, minmax(550px, 620px)) minmax(10px, 20px);
@@ -126,13 +124,11 @@
         margin: 50px 0px;
     }
 }
-
 @media screen and (max-width: 768px) {
     .why {
         grid-template-columns: minmax(60px, auto) repeat(3, minmax(450px, 550px)) minmax(10px, 20px);
     }
 }
-
 @media screen and (max-width: 599px) {
     .why {
         grid-template-columns: 16px repeat(3, minmax(310px, 450px)) 16px;

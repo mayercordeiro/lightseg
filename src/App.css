@@ -138,6 +138,13 @@ a:hover {
   --bs-btn-bg: #0b3a5e !important;
   --bs-btn-border-color: #0b3a5e !important;
 }
+/* Sobrepor Modal ao WhatsApp Widget */
+.whatsapp_widget_wrapper {
+  z-index: 999 !important;
+}
+.modal {
+  z-index: 99999 !important;
+}
 @media screen and (max-width: 499px) {
   .carousel-item {
     height: 450px;

@@ -196,7 +196,7 @@ const Contato = () => {
           </div>
           <div className={styles.infosTexts}>
             <h2>Nosso Endereço:</h2>
-            <p>Tv. da Lapa, 90, Conjunto 131</p>
+            <a href="https://goo.gl/maps/qy7hSAxKTcKGvgyd8">Tv. da Lapa, 96, Conjunto 131</a>
             <p>Curitiba / Paraná</p>
           </div>
         </div>
@@ -206,7 +206,11 @@ const Contato = () => {
           </div>
           <div className={styles.infosTexts}>
             <h2>Email:</h2>
-            <p>halisson@lightseg.com.br</p>
+            <a
+              href="mailto:halisson@lightseg.com.br"
+            >
+              halisson@lightseg.com.br
+            </a>
           </div>
         </div>
         <div className={styles.right}>
@@ -215,7 +219,7 @@ const Contato = () => {
           </div>
           <div className={styles.infosTexts}>
             <h2>Telefone:</h2>
-            <p>+55 (41) 99274-3680</p>
+            <a href="tel:+5541992743680">+55 (41) 99274-3680</a>
           </div>
         </div>
       </div>

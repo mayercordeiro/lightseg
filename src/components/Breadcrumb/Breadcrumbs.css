@@ -30,7 +30,11 @@
     background-position: 35%;
   }
   .breadcrumb h1 {
-    font-size: 2rem;
+    font-size: 3rem;
+    margin: 0 16px;
+  }
+  #breadcrumbPosts h1 {
+    font-size: 2rem !important;
     margin: 0 16px;
   }
 }

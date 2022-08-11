@@ -25,25 +25,39 @@ const Footer = () => {
           <p className={styles.titulo}>Contato</p>
           <ul className={styles.contact}>
             <li>
-              <a id={styles.email} className={styles.contactIcon} href="./">
+              <a
+                href="mailto:halisson@lightseg.com.br"
+                id={styles.email}
+                className={styles.contactIcon}
+              >
                 halisson@lightseg.com.br
               </a>
             </li>
             <li>
-              <a id={styles.phone} className={styles.contactIcon} href="./">
+              <a
+                href="tel:+5541992743680"
+                id={styles.phone}
+                className={styles.contactIcon}
+              >
                 +55 (41) 99274-3680
               </a>
             </li>
             <li>
-              <a id={styles.endereco} className={styles.contactIcon} href="./">
-                Tv. da Lapa, 90, Conjunto 131
+              <a
+                href="https://goo.gl/maps/qy7hSAxKTcKGvgyd8"
+                target="_blank"
+                id={styles.endereco}
+                className={styles.contactIcon}
+              >
+                Tv. da Lapa, 96, Conjunto 131
               </a>
             </li>
             <li>
               <a
+                href="https://goo.gl/maps/qy7hSAxKTcKGvgyd8"
+                target="_blank"
                 id={styles.enderecoDois}
                 className={styles.contactIcon}
-                href="./"
               >
                 Centro - Curitiba / PR
               </a>

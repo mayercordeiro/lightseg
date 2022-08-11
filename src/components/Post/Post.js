@@ -29,7 +29,7 @@ const Post = () => {
 
   return (
     <section>
-      <Breadcrumbs titulo={post.title?.rendered} />
+      <Breadcrumbs tituloBlog="breadcrumbPosts" titulo={post.title?.rendered} />
       {loading ? (
         <section className={styles.singlePost}>
           <div className={styles.post_left}>
