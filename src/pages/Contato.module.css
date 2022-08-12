@@ -55,6 +55,7 @@
 }
 .contatoForm input,
 textarea {
+  width: 100%;
   background-color: #fff;
   border: 1px solid #dadce1;
   border-radius: 6px;
@@ -174,6 +175,7 @@ textarea {
   display: none;
 }
 .btn_enviar input[type="submit"] {
+  width: 100%;
   background-color: #0b3a5e;
   color: #fff;
   font-size: 1.4rem;

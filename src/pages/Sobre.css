@@ -71,19 +71,20 @@
 }
 .tabs_textos {
   max-width: 500px;
+  margin-top: 16px;
 }
 .tabs_textos > p {
   font-weight: 500;
   font-size: 1.4rem;
-  margin: 10px 0px 100px 0px;
+  margin: 10px 0px 0px 0px;
   color: #0b3a5e;
 }
 .tabs_textos > ul li {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
   color: #0b3a5e;
 }
 .sobre_texto {
-  font-weight: 500;
   font-size: 1.4rem;
   margin: 10px 0px 100px 0px;
   color: #0b3a5e;
@@ -109,16 +110,6 @@
 .textobold {
   font-weight: 700;
 }
-.caminhao {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  height: 300px;
-  align-items: center;
-  padding-right: 36px;
-  margin-top: -90px;
-  opacity: 0.05;
-}
 .caminhao img {
   max-width: 280px;
 }
@@ -135,10 +126,7 @@
   }
 }
 @media screen and (max-width: 499px) {
-  .caminhao {
-    margin-top: 0px;
-  }
   .sobre {
-    margin-top: 0px;
+    margin-top: 50px;
   }
 }
