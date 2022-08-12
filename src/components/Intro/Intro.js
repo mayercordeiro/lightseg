@@ -1,5 +1,3 @@
-// React
-import { useEffect } from "react";
 // Router
 import { NavLink } from "react-router-dom";
 // CSS
@@ -14,10 +12,10 @@ const Intro = () => {
     <section className={styles.seguros}>
       <div className={styles.segurosImages}>
         <div className={styles.truckContainer}>
-          <img src={Truck} loading="lazy" />
+          <img src={Truck} loading="lazy" alt="Caminhões transportando cargas parados em uma estrada" />
         </div>
         <div className={styles.imagesub}>
-          <img src={N1} loading="lazy" />
+          <img src={N1} loading="lazy" alt="Número Um" />
           <p>Nº 1 em Seguros para o Transporte de Cargas</p>
         </div>
       </div>
@@ -32,15 +30,15 @@ const Intro = () => {
         </p>
         <div className={styles.adicionais}>
           <div className={styles.adicionaisContent}>
-            <img src={Seta} loading="lazy" />
+            <img src={Seta} loading="lazy" alt="Item" />
             <p>Cobertura básica;</p>
           </div>
           <div className={styles.adicionaisContent}>
-            <img src={Seta} loading="lazy" />
+            <img src={Seta} loading="lazy" alt="Item" />
             <p>Coberturas adicionais;</p>
           </div>
           <div className={styles.adicionaisContent}>
-            <img src={Seta} loading="lazy" />
+            <img src={Seta} loading="lazy" alt="Item" />
             <p>Cláusulas específicas.</p>
           </div>
         </div>

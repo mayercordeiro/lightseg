@@ -41,7 +41,7 @@ const Header = () => {
         >
           <Container fluid>
             <NavLink to="/">
-              <img src={Logo} id={ativaCorHeader ? "logoScroll" : "logo"} />
+              <img src={Logo} id={ativaCorHeader ? "logoScroll" : "logo"} alt="Logo LightSeg" />
             </NavLink>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas

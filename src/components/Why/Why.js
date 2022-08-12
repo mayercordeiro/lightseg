@@ -19,7 +19,7 @@ const Why = () => {
         <section className={styles.why}>
           <div className={styles.um}>
             <div className={styles.whyContent}>
-              <img src={Um} loading="lazy" />
+              <img src={Um} loading="lazy" alt="1" />
               <h3>O Melhor Serviço</h3>
             </div>
             <div className={styles.gridP}>
@@ -33,7 +33,7 @@ const Why = () => {
           </div>
           <div>
             <div className={styles.whyContent}>
-              <img src={Dois} loading="lazy" />
+              <img src={Dois} loading="lazy" alt="2" />
               <h3>O Melhor Valor</h3>
             </div>
             <div className={styles.gridP}>
@@ -47,7 +47,7 @@ const Why = () => {
           </div>
           <div>
             <div className={styles.whyContent}>
-              <img src={Tres} loading="lazy" />
+              <img src={Tres} loading="lazy" alt="3" />
               <h3>A Melhor Experiência</h3>
             </div>
             <div className={styles.gridP}>

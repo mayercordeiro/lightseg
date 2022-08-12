@@ -12,7 +12,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div>
-          <img className={styles.logo} src={LogoFooter} loading="lazy" />
+          <img className={styles.logo} src={LogoFooter} loading="lazy" alt="Logo LightSeg" />
           <div className={styles.text}>
             <p>
               "Proporcionar tranquilidade aos nossos clientes com seguros na
@@ -118,6 +118,7 @@ const Footer = () => {
                 className={styles.socialIcons}
                 src={Instagram}
                 loading="lazy"
+                alt="ícone instagram"
               />
             </a>
             <a href="./">
@@ -125,6 +126,7 @@ const Footer = () => {
                 className={styles.socialIcons}
                 src={Facebook}
                 loading="lazy"
+                alt="ícone facebook"
               />
             </a>
           </div>
