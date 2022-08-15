@@ -13,10 +13,27 @@
   grid-column-start: 2;
 }
 .intro h1 {
+  position: relative;
   font-size: 3rem;
   line-height: 3.4rem;
   color: #0b3a5e;
   font-weight: bold;
+  cursor: pointer;
+}
+.intro h1::before {
+  content: '';
+  background-color: #dade30;
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  height: 16px;
+  z-index: -1;
+  transition: all .3s ease-in-out;
+}
+.intro h1:hover::before {
+  bottom: 0;
+  height: 48%;
 }
 .intro p {
   max-width: 530px;
@@ -101,6 +118,11 @@
 @media screen and (max-width: 1329px) {
   .intro p {
     max-width: 400px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .intro h1::before {
+    width: 0%;
   }
 }
 @media screen and (max-width: 1125px) {

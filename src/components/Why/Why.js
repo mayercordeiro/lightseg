@@ -64,15 +64,15 @@ const Why = () => {
 
       <div className={styles.contadores}>
         <div className={styles.contadoresContent}>
-          <span className={styles.contadoresLine1}>Mais de</span>
-          <CountUp end={4000} redraw={true} duration={.5} separator={"."}>
+          <span className={styles.contadoresLine1}>Há mais de</span>
+          <CountUp end={25} redraw={true} duration={.5} separator={"."}>
             {({ countUpRef, start }) => (
               <VisibilitySensor onChange={start}>
                 <span className={styles.contadoresLine2} ref={countUpRef} />
               </VisibilitySensor>
             )}
           </CountUp>
-          <span className={styles.contadoresLine3}>Clientes Segurados</span>
+          <span className={styles.contadoresLine3}>Anos no Mercado</span>
         </div>
         <div className={styles.contadoresContent}>
           <span className={styles.contadoresLine1}>Mais de</span>
