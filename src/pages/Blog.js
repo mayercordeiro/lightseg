@@ -25,7 +25,7 @@ const Blog = () => {
         <section className={styles.posts}>
           {data &&
             data.map((item) => (
-              <div key={item.id} className={styles.post_container}>
+              <article key={item.id} className={styles.post_container}>
                 <div
                   className={styles.post_imagem}
                   style={{ backgroundImage: `url('${item.acf.imagem.url}')` }}
@@ -39,7 +39,7 @@ const Blog = () => {
                   <p>{item.acf.resumo}</p>
                 </div>
                 <div className={styles.post_infos}>
-                  <div className={styles.data}>{item.acf.data}</div>
+                  <time className={styles.data}>{item.acf.data}</time>
                   <div>
                     <NavLink
                       className={styles.leiamais}
@@ -49,7 +49,7 @@ const Blog = () => {
                     </NavLink>
                   </div>
                 </div>
-              </div>
+              </article>
             ))}
         </section>
       </section>

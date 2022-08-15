@@ -13,8 +13,8 @@ import VisibilitySensor from "react-visibility-sensor";
 const Why = () => {
   return (
     <section>
-      <h1 className={styles.whyh1}>Por que a LightSeg?</h1>
-      <h2 className={styles.whyh2}>Sempre encontrando o melhor negócio!</h2>
+      <h3 className={styles.whyh1}>Por que a LightSeg?</h3>
+      <h3 className={styles.whyh2}>Sempre encontrando o melhor negócio!</h3>
       <section className={styles.container}>
         <section className={styles.why}>
           <div className={styles.um}>
@@ -64,7 +64,7 @@ const Why = () => {
 
       <div className={styles.contadores}>
         <div className={styles.contadoresContent}>
-          <span className={styles.contadoresLine1}>Há mais de</span>
+          <span className={styles.contadoresLine1}>Mais de</span>
           <CountUp end={25} redraw={true} duration={.5} separator={"."}>
             {({ countUpRef, start }) => (
               <VisibilitySensor onChange={start}>
@@ -72,11 +72,11 @@ const Why = () => {
               </VisibilitySensor>
             )}
           </CountUp>
-          <span className={styles.contadoresLine3}>Anos no Mercado</span>
+          <span className={styles.contadoresLine3}>Anos de Experiência</span>
         </div>
         <div className={styles.contadoresContent}>
           <span className={styles.contadoresLine1}>Mais de</span>
-          <CountUp end={50000} redraw={true} duration={1.5} separator={"."}>
+          <CountUp end={10000} redraw={true} duration={1.5} separator={"."}>
             {({ countUpRef, start }) => (
               <VisibilitySensor onChange={start} delayedCall>
                 <span className={styles.contadoresLine2} ref={countUpRef} />

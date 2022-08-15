@@ -3,7 +3,6 @@ import Breadcrumbs from "../components/Breadcrumb/Breadcrumbs";
 import "./Sobre.css";
 // Images
 import SetaSobre from "../assets/images/setasobre.svg";
-import Truck from "../assets/images/trucksobre.svg";
 // Tabs
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
@@ -72,8 +71,8 @@ const Sobre = () => {
 
         <div className="sobre">
           <p className="sobre_texto">
-            Criada para atender especialmente produtos empresariais e foco
-            principalmente em <span className="textobold">seguros para transporte de cargas</span>. A corretora deu início nas suas atividades somando duas forças, de um lado, um sócio com o conhecimento nos processos operacionais interno de uma seguradora, do outro, a força e tradição da corretora <span className="textobold">HH Vicentin</span>, que a mais de 25 anos é reconhecida e consolidada no mercado segurador, sempre oferecendo e atendendo todas as modalidades de seguros. Esta somatória, o resultado do conhecimento das duas figuras, seguradora e corretora, <span className="textobold">torna nosso maior diferencial.</span> Unimos o conhecimento, o relacionamento e a experiencia adquirida nos processos internos de uma Companhia de seguro, com expertise comercial de uma das corretoras mais tradicionais, forte e sólida do mercado brasileiro.
+            Criada para atender especialmente produtos empresariais, com foco
+            principalmente em <span className="textobold">seguros para transporte de cargas</span>. A corretora deu início nas suas atividades somando duas forças, de um lado, um sócio que atuou por 26 anos dentro das maiores companias seguradoras do mercado, do outro, a força e tradição da corretora <span className="textobold">HH Vicentin</span>, que a mais de 25 anos é reconhecida e consolidada no mercado segurador, sempre oferecendo e atendendo todas as modalidades de seguros. Esta somatória, o resultado do conhecimento das duas figuras, seguradora e corretora, <span className="textobold">torna nosso maior diferencial.</span> Unimos o conhecimento, o relacionamento e a experiencia adquirida nos processos internos de uma Companhia de seguro, com expertise comercial de uma das corretoras mais tradicionais, forte e sólida do mercado brasileiro.
           </p>
         </div>
       </section>

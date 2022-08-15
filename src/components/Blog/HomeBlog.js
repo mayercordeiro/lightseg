@@ -27,7 +27,7 @@ const HomeBlog = () => {
       <section className={styles.posts}>
         {data &&
           data.slice(0, 3).map((item) => (
-            <div key={item.id} className={styles.post_container}>
+            <article key={item.id} className={styles.post_container}>
               <div
                 className={styles.post_imagem}
                 style={{ backgroundImage: `url('${item.acf.imagem.url}')` }}
@@ -41,14 +41,14 @@ const HomeBlog = () => {
                 <p>{item.acf.resumo}</p>
               </div>
               <div className={styles.post_infos}>
-                <div className={styles.data}>{item.acf.data}</div>
+                <time className={styles.data}>{item.acf.data}</time>
                 <div>
                   <NavLink className={styles.leiamais} to={`/post/${item.id}`}>
                     Leia +
                   </NavLink>
                 </div>
               </div>
-            </div>
+            </article>
           ))}
         <div className={styles.VerTodosBotao}>
           <NavLink to="/blog">Ver Todos</NavLink>

@@ -12,16 +12,21 @@ const Intro = () => {
     <section className={styles.seguros}>
       <div className={styles.segurosImages}>
         <div className={styles.truckContainer}>
-          <img src={Truck} loading="lazy" alt="Caminhões transportando cargas parados em uma estrada" />
-        </div>
-        <div className={styles.imagesub}>
-          <img src={N1} loading="lazy" alt="Número Um" />
-          <p>Nº 1 em Seguros para o Transporte de Cargas</p>
+          <img
+            src={Truck}
+            loading="lazy"
+            alt="Caminhões transportando cargas parados em uma estrada"
+          />
+          <div className={styles.imagesub}>
+            <img src={N1} loading="lazy" alt="Número Um" />
+            <p>Nº 1 em Seguros para o Transporte de Cargas</p>
+          </div>
         </div>
       </div>
+
       <div className={styles.segurosTexts}>
-        <h1 id={styles.lineh1}>Conheça o</h1>
-        <h1 className={styles.h1gradiente}>Seguro RCTR-C</h1>
+        <h2 id={styles.lineh1}>Conheça o</h2>
+        <h2 className={styles.h1gradiente}>Seguro RCTR-C</h2>
         <p>
           O RCTR-C é um seguro que indeniza eventuais danos à carga, em casos de
           acidentes ocorridos nas estradas, como colisões, tombamento, incêndios

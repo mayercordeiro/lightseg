@@ -31,7 +31,7 @@ const Post = () => {
     <section>
       <Breadcrumbs tituloBlog="breadcrumbPosts" titulo={post.title?.rendered} />
       {loading ? (
-        <section className={styles.singlePost}>
+        <article className={styles.singlePost}>
           <div className={styles.post_left}>
             <div
               className={styles.post_imagem}
@@ -43,16 +43,16 @@ const Post = () => {
             </div>
             <div className={styles.data}>
               <img src={Clock} />
-              <p>{post.acf?.data}</p>
+              <time>{post.acf?.data}</time>
             </div>
           </div>
 
-          <div className={styles.post_right}>
+          <main className={styles.post_right}>
             <div
               dangerouslySetInnerHTML={{ __html: `${post.content?.rendered}` }}
             />
-          </div>
-        </section>
+          </main>
+        </article>
       ) : 
         <div className={styles.loading}>
           <img src={Loading} />

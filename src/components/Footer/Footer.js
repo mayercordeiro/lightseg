@@ -21,7 +21,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className={styles.linksUteis}>
+        <address className={styles.linksUteis}>
           <p className={styles.titulo}>Contato</p>
           <ul className={styles.contact}>
             <li>
@@ -63,7 +63,7 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-        </div>
+        </address>
 
         <div className={styles.linksUteis}>
           <p className={styles.titulo}>Links Úteis</p>

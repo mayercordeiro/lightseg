@@ -8,12 +8,12 @@ import HomeBlog from '../components/Blog/HomeBlog'
 
 const Home = () => {
   return (
-    <main className={styles.main}>
+    <section className={styles.main}>
       <HomeStart />
       <Intro />
       <Why />
       <HomeBlog />
-    </main>
+    </section>
   )
 }
 
