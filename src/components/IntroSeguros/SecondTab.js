@@ -19,25 +19,6 @@ const FirstTab = () => {
         danos ou perdas de mercadorias de terceiros em uma ocorrência como as
         mencionadas acima.
       </p>
-      <div className={styles.adicionais}>
-        <div className={styles.adicionaisContent}>
-          <img src={Seta} loading="lazy" alt="Item" />
-          <p>Cobertura básica;</p>
-        </div>
-        <div className={styles.adicionaisContent}>
-          <img src={Seta} loading="lazy" alt="Item" />
-          <p>Coberturas adicionais;</p>
-        </div>
-        <div className={styles.adicionaisContent}>
-          <img src={Seta} loading="lazy" alt="Item" />
-          <p>Cláusulas específicas.</p>
-        </div>
-      </div>
-      <div className={styles.saibamaisContainer}>
-        <NavLink to="/seguros" className={styles.saibamais}>
-          Saiba Mais
-        </NavLink>
-      </div>
     </div>
   );
 };
