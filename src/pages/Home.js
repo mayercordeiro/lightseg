@@ -2,15 +2,15 @@
 import styles from './Home.module.css'
 // Components
 import HomeStart from '../components/HomeStart/HomeStart'
-import Intro from '../components/Intro/Intro'
 import Why from '../components/Why/Why'
 import HomeBlog from '../components/Blog/HomeBlog'
+import IntroSeguros from '../components/IntroSeguros/IntroSeguros'
 
 const Home = () => {
   return (
     <section className={styles.main}>
       <HomeStart />
-      <Intro />
+      <IntroSeguros />
       <Why />
       <HomeBlog />
     </section>
