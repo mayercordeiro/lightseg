@@ -189,7 +189,7 @@ const Contato = () => {
       </section>
 
       {/* INFORMAÇÕES DE CONTATO */}
-      <div className={styles.infos} data-aos="fade-right" data-aos-once="true" data-aos-delay="300">
+      <div className={styles.infos} data-aos="fade-right" data-aos-once="true">
         <div className={styles.infosContainer}>
           <div className={styles.infosImg}>
             <img src={Endereco} />

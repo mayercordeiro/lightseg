@@ -57,9 +57,9 @@ const Sobre = () => {
             </ul>
           </div>
 
-          <div className="">
+          <div>
             {activeTab === "tab1" && (
-              <div className="about_tabs_textos">
+              <div className="about_tabs_textos" data-aos="fade-up" data-aos-once="true">
                 <ul className="lista_valores">
                   <div className="lista_valores_content">
                     <img src={SetaSobre} />
@@ -87,7 +87,7 @@ const Sobre = () => {
               </div>
             )}
             {activeTab === "tab2" && (
-              <div className="about_tabs_textos">
+              <div className="about_tabs_textos" data-aos="fade-up" data-aos-once="true">
                 <p>
                   Proporcionar tranquilidade a nossos clientes, com seguros nas
                   mais variadas modalidades. Oferecendo toda consultoria e
@@ -96,7 +96,7 @@ const Sobre = () => {
               </div>
             )}
             {activeTab === "tab3" && (
-              <div className="about_tabs_textos">
+              <div className="about_tabs_textos" data-aos="fade-up" data-aos-once="true">
                 <p>
                   Trabalhar para oferecer o produto ideal aos nossos clientes,
                   buscar o reconhecimento, como a corretora ideal que busca em

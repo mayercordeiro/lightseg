@@ -27,8 +27,8 @@ const HomeStart = () => {
   }, []);
 
   return (
-    <main className={styles.containerMain} data-aos="fade-right" data-aos-once="true">
-      <section className={styles.intro}>
+    <main className={styles.containerMain}>
+      <section className={styles.intro} data-aos="fade-right" data-aos-once="true">
         <h1>Seguros para o Transporte de Cargas</h1>
         <p>
           Cada produto transportado possui sua importância e característica. A
@@ -37,7 +37,7 @@ const HomeStart = () => {
         </p>
       </section>
 
-      <section className={styles.cotacao}>
+      <section className={styles.cotacao} data-aos="fade-zoom-in" data-aos-once="true">
         <h2 className={styles.cotacao_h2}>Faça sua cotação</h2>
         <p className={styles.cotacao_p}>Selecione um produto e vamos juntos!</p>
         <Carousel id={styles.slide} variant="dark">

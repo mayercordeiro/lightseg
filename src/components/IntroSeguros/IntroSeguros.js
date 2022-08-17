@@ -27,19 +27,19 @@ const IntroSeguros = () => {
   return (
     <section className="intro_seguros">
       <div className="tabs">
-        <div className="truck" data-aos="zoom-in-left" data-aos-once="true">
+        <div className="truck" data-aos="zoom-in-right" data-aos-once="true">
           <div className="imagesub">
             <img src={N1} loading="lazy" alt="Número Um" />
             <p>Nº 1 em Seguros para o Transporte de Cargas</p>
           </div>
         </div>
 
-        <div className="imagesubMobile" data-aos="zoom-in-left" data-aos-once="true">
+        <div className="imagesubMobile" data-aos="fade-up" data-aos-once="true">
           <img src={N1} loading="lazy" alt="Número Um" />
           <p>Nº 1 em Seguros para o Transporte de Cargas</p>
         </div>
 
-        <div className="container_nav" data-aos="zoom-in-left" data-aos-once="true">
+        <div className="container_nav" data-aos="zoom-in-right" data-aos-once="true">
           <ul className="nav">
             <li
               className={activeTab === "tab1" ? "active" : ""}
