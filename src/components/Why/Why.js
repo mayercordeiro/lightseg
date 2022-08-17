@@ -12,7 +12,7 @@ import VisibilitySensor from "react-visibility-sensor";
 
 const Why = () => {
   return (
-    <section>
+    <section data-aos="zoom-in" data-aos-once="true">
       <h3 className={styles.whyh1}>Por que a LightSeg?</h3>
       <h3 className={styles.whyh2}>Sempre encontrando o melhor negócio!</h3>
       <section className={styles.container}>
@@ -62,7 +62,7 @@ const Why = () => {
         </section>
       </section>
 
-      <div className={styles.contadores}>
+      <div className={styles.contadores} data-aos="zoom-in" data-aos-once="true">
         <div className={styles.contadoresContent}>
           <span className={styles.contadoresLine1}>Mais de</span>
           <CountUp end={25} redraw={true} duration={.5} separator={"."}>

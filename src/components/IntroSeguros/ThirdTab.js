@@ -8,7 +8,7 @@ import Seta from "../../assets/images/introseta.svg";
 
 const FirstTab = () => {
   return (
-    <div className={styles.segurosTexts}>
+    <div className={styles.segurosTexts} data-aos="fade-right" data-aos-once="true">
       <h2 id={styles.lineh1}>Seguro</h2>
       <h2 className={styles.h1gradiente}>RCTR-C–VI</h2>
       <p>

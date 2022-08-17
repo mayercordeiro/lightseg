@@ -77,13 +77,13 @@ const Contato = () => {
     <section>
       <Breadcrumbs titulo="Contato" />
       <section className={styles.contato}>
-        <div className={styles.contatoTexts}>
+        <div className={styles.contatoTexts} data-aos="fade-right" data-aos-once="true" data-aos-delay="300">
           <h1>Alguma Dúvida?</h1>
           <p>Fale conosco agora mesmo!</p>
           <img src={Destaque} />
         </div>
 
-        <div className={styles.contatoForm}>
+        <div className={styles.contatoForm} data-aos="fade-right" data-aos-once="true" data-aos-delay="300">
           <h2>
             Estamos felizes em lhe atender. Por favor, entre em contato conosco
             através do formulário abaixo, ou se preferir através dos nossos
@@ -189,7 +189,7 @@ const Contato = () => {
       </section>
 
       {/* INFORMAÇÕES DE CONTATO */}
-      <div className={styles.infos}>
+      <div className={styles.infos} data-aos="fade-right" data-aos-once="true" data-aos-delay="300">
         <div className={styles.infosContainer}>
           <div className={styles.infosImg}>
             <img src={Endereco} />

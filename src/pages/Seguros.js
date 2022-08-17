@@ -1,24 +1,33 @@
+import { useEffect } from "react";
 // CSS
 import styles from "./Seguros.module.css";
 // Components
 import Breadcrumbs from "../components/Breadcrumb/Breadcrumbs";
 import OpenModal from "../components/Modal/OpenModal";
+import AOS from 'aos';
 // Forms
 import FormGeral from "../components/Forms/FormGeral";
 import FormAuto from "../components/Forms/FormAuto";
 
 const Seguros = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration : 2000
+    });
+  }, []);
+
   return (
     <section>
       <Breadcrumbs titulo="Seguros" />
       <section className={styles.seguros}>
-        <h1>Confira Nossas Soluções em Seguros</h1>
-        <h2>
+        <h1 data-aos="fade-right" data-aos-once="true" data-aos-delay="300">Confira Nossas Soluções em Seguros</h1>
+        <h2 data-aos="fade-right" data-aos-once="true" data-aos-delay="300">
           Saiba mais sobre os nossos diferentes tipos de seguro e Cote Agora!
           Proteja o futuro financeiro da sua empresa, seu e de sua família.
         </h2>
 
-        <div className={styles.segurosMain}>
+        <div className={styles.segurosMain} data-aos="zoom-in" data-aos-once="true" data-aos-delay="300">
           <div
             className={`${styles.segurosContainer} ${styles.bkg_transporte_cargas}`}
           >
@@ -38,7 +47,7 @@ const Seguros = () => {
           </div>
         </div>
 
-        <div className={styles.segurosMainRight}>
+        <div className={styles.segurosMainRight} data-aos="zoom-in" data-aos-once="true" data-aos-delay="300">
           <div className={`${styles.segurosContainer} ${styles.bkg_auto}`}>
             <h2>Auto</h2>
           </div>
@@ -56,7 +65,7 @@ const Seguros = () => {
           </div>
         </div>
 
-        <div className={styles.segurosMain}>
+        <div className={styles.segurosMain} data-aos="zoom-in" data-aos-once="true" data-aos-delay="300">
           <div className={`${styles.segurosContainer} ${styles.bkg_vida}`}>
             <h2>Vida</h2>
           </div>
@@ -74,7 +83,7 @@ const Seguros = () => {
           </div>
         </div>
 
-        <div className={styles.segurosMainRight}>
+        <div className={styles.segurosMainRight} data-aos="zoom-in" data-aos-once="true" data-aos-delay="300">
           <div
             className={`${styles.segurosContainer} ${styles.bkg_residencial}`}
           >
@@ -94,7 +103,7 @@ const Seguros = () => {
           </div>
         </div>
 
-        <div className={styles.segurosMain}>
+        <div className={styles.segurosMain} data-aos="zoom-in" data-aos-once="true" data-aos-delay="300">
           <div className={`${styles.segurosContainer} ${styles.bkg_affinity}`}>
             <h2>Affinity</h2>
           </div>

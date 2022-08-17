@@ -1,12 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 // CSS
 import "./Sobre.css";
 // Images
 import SetaSobre from "../assets/images/setasobre.svg";
 // Components
 import Breadcrumbs from "../components/Breadcrumb/Breadcrumbs";
+import AOS from 'aos';
 
 const Sobre = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration : 2000
+    });
+  }, []);
+
   const [activeTab, setActiveTab] = useState("tab1");
 
   const handleTab1 = () => {
@@ -23,7 +31,7 @@ const Sobre = () => {
     <section>
       <Breadcrumbs titulo="Sobre" />
       <section className="about">
-        <div className="about_container_left">
+        <div className="about_container_left" data-aos="fade-right" data-aos-once="true" data-aos-delay="300">
           <h1>Você pode confiar em nós para obter o melhor seguro!</h1>
 
           <div>
@@ -100,7 +108,7 @@ const Sobre = () => {
           </div>
         </div>
 
-        <div className="about_container_right">
+        <div className="about_container_right" data-aos="fade-right" data-aos-once="true" data-aos-delay="300">
           <p>
             Criada para atender especialmente produtos empresariais, com foco
             principalmente em{" "}

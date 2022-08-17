@@ -1,5 +1,6 @@
 .segurosTexts {
   color: #0b3a5e;
+  position: relative;
 }
 .segurosTexts > h2 {
   font-size: 3rem;
@@ -55,7 +56,7 @@
   transition: all 0.7s ease;
 }
 @media screen and (max-width: 599px) {
-    .saibamaisContainer {
-        text-align: center;
-    }
+  .saibamaisContainer {
+    text-align: center;
   }
+}

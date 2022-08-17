@@ -5,6 +5,7 @@
   align-items: center;
 }
 .header h2 {
+  text-align: center;
   font-size: 3rem;
   color: #0b3a5e;
 }

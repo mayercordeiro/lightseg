@@ -3,12 +3,10 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 // CSS
 import styles from "./FirstTab.module.css";
-// Images
-import Seta from "../../assets/images/introseta.svg";
 
-const FirstTab = () => {
+const SecondTab = () => {
   return (
-    <div className={styles.segurosTexts}>
+    <div className={styles.segurosTexts} data-aos="fade-right" data-aos-once="true">
       <h2 id={styles.lineh1}>O que é o</h2>
       <h2 className={styles.h1gradiente}>Seguro RCF-DC</h2>
       <p>
@@ -23,4 +21,4 @@ const FirstTab = () => {
   );
 };
 
-export default FirstTab;
+export default SecondTab;

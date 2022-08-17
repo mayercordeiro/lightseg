@@ -12,7 +12,7 @@ const HomeBlog = () => {
   const { data, loading } = useFetch(url);
 
   return (
-    <section className={styles.blog}>
+    <section className={styles.blog} data-aos="fade-up" data-aos-once="true">
       <div className={styles.blog_header}>
         <h3>Últimas News, Posts e Artigos</h3>
         <NavLink to="/blog">

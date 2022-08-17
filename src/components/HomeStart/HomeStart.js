@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 // CSS
 import styles from "./HomeStart.module.css";
 // Router
@@ -5,6 +6,8 @@ import { NavLink } from "react-router-dom";
 // Components
 import Carousel from "react-bootstrap/Carousel";
 import OpenModal from "../Modal/OpenModal";
+import AOS from 'aos';
+import "aos/dist/aos.css";
 // Images
 import Truck from "../../assets/images/truck.svg";
 import Car from "../../assets/images/car.svg";
@@ -16,8 +19,15 @@ import FormGeral from "../Forms/FormGeral";
 import FormAuto from "../Forms/FormAuto";
 
 const HomeStart = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration : 2000
+    });
+  }, []);
+
   return (
-    <main className={styles.containerMain}>
+    <main className={styles.containerMain} data-aos="fade-right" data-aos-once="true">
       <section className={styles.intro}>
         <h1>Seguros para o Transporte de Cargas</h1>
         <p>
