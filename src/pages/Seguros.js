@@ -1,21 +1,19 @@
-import { useEffect } from "react";
 // CSS
 import styles from "./Seguros.module.css";
 // Components
 import Breadcrumbs from "../components/Breadcrumb/Breadcrumbs";
 import OpenModal from "../components/Modal/OpenModal";
-import AOS from 'aos';
 // Forms
 import FormGeral from "../components/Forms/FormGeral";
 import FormAuto from "../components/Forms/FormAuto";
+// Texts
+import TransporteDeCargas from "../components/TextSeguros/TransporteDeCargas";
+import Auto from "../components/TextSeguros/Auto";
+import Vida from "../components/TextSeguros/Vida";
+import Residencial from "../components/TextSeguros/Residencial";
+import Affinity from "../components/TextSeguros/Affinity";
 
 const Seguros = () => {
-
-  useEffect(() => {
-    AOS.init({
-      duration : 2000
-    });
-  }, []);
 
   return (
     <section>
@@ -37,7 +35,7 @@ const Seguros = () => {
             <OpenModal
               estilo="botaoModalSaibaMais"
               tituloBtn="Saiba Mais"
-              form="Em breve..."
+              form={<TransporteDeCargas />}
             />
             <OpenModal
               estilo="botaoModalSeguros"
@@ -55,7 +53,7 @@ const Seguros = () => {
             <OpenModal
               estilo="botaoModalSaibaMais"
               tituloBtn="Saiba Mais"
-              form="Em breve..."
+              form={<Auto />}
             />
             <OpenModal
               estilo="botaoModalSeguros"
@@ -73,7 +71,7 @@ const Seguros = () => {
             <OpenModal
               estilo="botaoModalSaibaMais"
               tituloBtn="Saiba Mais"
-              form="Em breve..."
+              form={<Vida />}
             />
             <OpenModal
               estilo="botaoModalSeguros"
@@ -93,7 +91,7 @@ const Seguros = () => {
             <OpenModal
               estilo="botaoModalSaibaMais"
               tituloBtn="Saiba Mais"
-              form="Em breve..."
+              form={<Residencial />}
             />
             <OpenModal
               estilo="botaoModalSeguros"
@@ -111,7 +109,7 @@ const Seguros = () => {
             <OpenModal
               estilo="botaoModalSaibaMais"
               tituloBtn="Saiba Mais"
-              form="Em breve..."
+              form={<Affinity />}
             />
             <OpenModal
               estilo="botaoModalSeguros"

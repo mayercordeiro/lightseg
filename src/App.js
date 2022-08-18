@@ -1,5 +1,7 @@
+import { useEffect } from "react";
 // CSS
 import "./App.css";
+import "aos/dist/aos.css";
 // Router
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // Components
@@ -16,8 +18,16 @@ import Post from "./components/Post/Post";
 import PageNotFound from "./pages/PageNotFound";
 // Components
 import WhatsApp from "./components/WhatsApp/WhatsApp";
+import AOS from 'aos';
 
 function App() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
+
   return (
     <BrowserRouter>
       <ScrollToTop />

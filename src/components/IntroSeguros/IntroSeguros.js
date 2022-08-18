@@ -2,9 +2,9 @@ import React, { useState } from "react";
 // CSS
 import "./IntroSeguros.css";
 // Components
-import FirstTab from "./FirstTab";
-import SecondTab from "./SecondTab";
-import ThirdTab from "./ThirdTab";
+import FirstTab from "./Tabs/FirstTab";
+import SecondTab from "./Tabs/SecondTab";
+import ThirdTab from "./Tabs/ThirdTab";
 // Images
 import N1 from "../../assets/images/intron1.svg";
 import Seta from "../../assets/images/setahome.svg";

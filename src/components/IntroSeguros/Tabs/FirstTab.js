@@ -1,10 +1,9 @@
-import React from "react";
 // Router
 import { NavLink } from "react-router-dom";
 // CSS
 import styles from "./FirstTab.module.css";
 // Images
-import Seta from "../../assets/images/introseta.svg";
+import Seta from "../../../assets/images/introseta.svg";
 
 const FirstTab = () => {
   return (

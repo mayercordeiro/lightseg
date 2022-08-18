@@ -1,19 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 // CSS
 import "./Sobre.css";
 // Images
 import SetaSobre from "../assets/images/setasobre.svg";
 // Components
 import Breadcrumbs from "../components/Breadcrumb/Breadcrumbs";
-import AOS from 'aos';
 
 const Sobre = () => {
-
-  useEffect(() => {
-    AOS.init({
-      duration : 2000
-    });
-  }, []);
 
   const [activeTab, setActiveTab] = useState("tab1");
 

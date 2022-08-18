@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 // Hooks
 import { useFetch } from "../hooks/useFetch";
 // CSS
@@ -7,17 +6,10 @@ import styles from "./Blog.module.css";
 import { NavLink } from "react-router-dom";
 // Components
 import Breadcrumbs from "../components/Breadcrumb/Breadcrumbs";
-import AOS from 'aos';
 // Loading
 import Loading from "../assets/images/loading.svg";
 
 const Blog = () => {
-
-  useEffect(() => {
-    AOS.init({
-      duration : 2000
-    });
-  }, []);
 
   const url = "https://lightseg.com.br/lsapi/wp-json/wp/v2/artigos";
   const { data, loading } = useFetch(url);

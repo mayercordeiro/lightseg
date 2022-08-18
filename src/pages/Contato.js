@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import axios from "axios";
 // CSS
 import styles from "./Contato.module.css";
@@ -77,13 +77,23 @@ const Contato = () => {
     <section>
       <Breadcrumbs titulo="Contato" />
       <section className={styles.contato}>
-        <div className={styles.contatoTexts} data-aos="fade-right" data-aos-once="true" data-aos-delay="300">
+        <div
+          className={styles.contatoTexts}
+          data-aos="fade-right"
+          data-aos-once="true"
+          data-aos-delay="300"
+        >
           <h1>Alguma Dúvida?</h1>
           <p>Fale conosco agora mesmo!</p>
           <img src={Destaque} />
         </div>
 
-        <div className={styles.contatoForm} data-aos="fade-right" data-aos-once="true" data-aos-delay="300">
+        <div
+          className={styles.contatoForm}
+          data-aos="fade-right"
+          data-aos-once="true"
+          data-aos-delay="300"
+        >
           <h2>
             Estamos felizes em lhe atender. Por favor, entre em contato conosco
             através do formulário abaixo, ou se preferir através dos nossos
@@ -196,7 +206,9 @@ const Contato = () => {
           </div>
           <div className={styles.infosTexts}>
             <h2>Nosso Endereço:</h2>
-            <a href="https://goo.gl/maps/qy7hSAxKTcKGvgyd8">Tv. da Lapa, 96, Conjunto 131</a>
+            <a href="https://goo.gl/maps/qy7hSAxKTcKGvgyd8">
+              Tv. da Lapa, 96, Conjunto 131
+            </a>
             <p>Curitiba / Paraná</p>
           </div>
         </div>
@@ -206,9 +218,7 @@ const Contato = () => {
           </div>
           <div className={styles.infosTexts}>
             <h2>Email:</h2>
-            <a
-              href="mailto:halisson@lightseg.com.br"
-            >
+            <a href="mailto:halisson@lightseg.com.br">
               halisson@lightseg.com.br
             </a>
           </div>
