@@ -3,16 +3,16 @@ import styles from "./FirstTab.module.css";
 
 const FirstTab = () => {
   return (
-    <div className={styles.segurosTexts} data-aos="fade-right" data-aos-once="true">
+    <div
+      className={styles.segurosTexts}
+      data-aos="fade-right"
+      data-aos-once="true"
+    >
       <h2 id={styles.lineh1}>Seguro</h2>
-      <h2 className={styles.h1gradiente}>RCTR-C–VI</h2>
+      <h2 className={styles.h1gradiente}>RCTRC–VI</h2>
       <p>
-        É um tipo de Seguro de Carga que protege a mercadoria contra perda total
-        ou parcial em situações de: furto, estelionato, extorsão (simples ou
-        sequestros) e apropriação indevida. tem o objetivo de proteger a própria
-        transportadora para que ela não tenha que arcar financeiramente com
-        danos ou perdas de mercadorias de terceiros em uma ocorrência como as
-        mencionadas acima.
+        Esta apólice de seguro é destinada às transportadoras que operam em
+        transporte rodoviários de cargas com viagens internacionais.
       </p>
     </div>
   );

@@ -45,7 +45,7 @@ const IntroSeguros = () => {
               className={activeTab === "tab1" ? "active" : ""}
               onClick={handleTab1}
             >
-              <span>RCTR-C</span>
+              <span>RCTRC</span>
               <img src={Seta} />
             </li>
             <li
@@ -59,7 +59,7 @@ const IntroSeguros = () => {
               className={activeTab === "tab3" ? "active" : ""}
               onClick={handleTab3}
             >
-              <span>RCTR-C – VI</span>
+              <span>RCTRC – VI</span>
               <img src={Seta} />
             </li>
           </ul>

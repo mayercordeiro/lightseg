@@ -7,7 +7,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // Components
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import ScrollToTop from "./components/Header/ScrollToTop";
+import ScrollToTop from "./components/NewHeader/ScrollToTop";
+import NewHeader from "./components/NewHeader/NewHeader";
 // Pages
 import Home from "./pages/Home";
 import Sobre from "./pages/Sobre";
@@ -31,7 +32,7 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <Header />
+      <NewHeader />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<Sobre />} />

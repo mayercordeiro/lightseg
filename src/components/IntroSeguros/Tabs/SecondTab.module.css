@@ -55,6 +55,9 @@
   color: #0b3a5e;
   transition: all 0.7s ease;
 }
+.saibamaisContainer{
+  margin-top: 50px;
+}
 @media screen and (max-width: 599px) {
   .saibamaisContainer {
     text-align: center;

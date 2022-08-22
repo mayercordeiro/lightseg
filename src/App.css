@@ -143,7 +143,10 @@ a:hover {
   z-index: 999 !important;
 }
 .modal {
-  z-index: 99999 !important;
+  z-index: 3500 !important;
+}
+.modal-backdrop {
+  z-index: 3000;
 }
 @media screen and (max-width: 499px) {
   .carousel-item {

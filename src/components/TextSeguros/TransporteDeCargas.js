@@ -22,19 +22,19 @@ const TransporteDeCargas = () => {
           className={activeTab === "item1" ? "active-text" : ""}
           onClick={handleItem1}
         >
-          RCTR-C
+          RCTRC
         </li>
         <li
           className={activeTab === "item2" ? "active-text" : ""}
           onClick={handleItem2}
         >
-          RCF-DC?
+          RCF-DC
         </li>
         <li
           className={activeTab === "item3" ? "active-text" : ""}
           onClick={handleItem3}
         >
-          RCTR-C–VI
+          RCTRC–VI
         </li>
       </ol>
 

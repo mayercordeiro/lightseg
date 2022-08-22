@@ -21,6 +21,7 @@
 }
 .text_seguros{
   scroll-behavior: smooth !important;
+  font-family: "Montserrat", sans-serif;
 }
 .text_seguros h2{
     text-align: left;

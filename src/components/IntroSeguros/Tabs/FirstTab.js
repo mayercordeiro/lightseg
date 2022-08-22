@@ -9,9 +9,9 @@ const FirstTab = () => {
   return (
     <div className={styles.segurosTexts} data-aos="fade-right" data-aos-once="true">
       <h2 id={styles.lineh1}>Conheça o</h2>
-      <h2 className={styles.h1gradiente}>Seguro RCTR-C</h2>
+      <h2 className={styles.h1gradiente}>Seguro RCTRC</h2>
       <p>
-        O RCTR-C é um seguro que indeniza eventuais danos à carga, em casos de
+        O RCTRC é um seguro que indeniza eventuais danos à carga, em casos de
         acidentes ocorridos nas estradas, como colisões, tombamento, incêndios e
         explosões. Aqui na LightSeg somos especializados nesta modalidade de
         seguro e vamos lhe oferecer o que há de melhor.
