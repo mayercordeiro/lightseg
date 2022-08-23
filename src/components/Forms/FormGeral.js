@@ -11,6 +11,7 @@ const FormGeral = (props) => {
   const url =
     "https://lightseg.com.br/lsapi/wp-json/contact-form-7/v1/contact-forms/56/feedback/";
 
+  const [subject, setSubject] = useState("");
   const [yourname, setYourname] = useState("");
   const [surname, setSurname] = useState("");
   const [email, setEmail] = useState("");
@@ -87,6 +88,7 @@ const FormGeral = (props) => {
                 name="yoursubject"
                 value={props.titulo}
                 type="text"
+                onChange={(e) => setSubject(e.target.value)}
               />
             </div>
             <div>

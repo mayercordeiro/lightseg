@@ -23,6 +23,7 @@ const NewHeader = () => {
   });
   // Abrir Menu Mobile
   const [mobileActive, setMobileActive] = useState(false);
+  
   const handleMobile = () => {
     setMobileActive(!mobileActive);
   };
@@ -63,9 +64,8 @@ const NewHeader = () => {
 
         <div
           id={mobileActive ? "mySidepanelAberto" : "mySidepanelFechado"}
-          class="sidepanel"
-        >
-          <a href="javascript:void(0)" class="closebtn" onClick={handleMobile}>
+          className="sidepanel">
+          <a className="closebtn" onClick={handleMobile}>
             &times;
           </a>
           <NavLink to="/" onClick={handleMobile}>
@@ -88,7 +88,7 @@ const NewHeader = () => {
           </NavLink>
         </div>
 
-        <button class={btnOpen} onClick={handleMobile}>
+        <button className={btnOpen} onClick={handleMobile}>
           &#9776;
         </button>
       </nav>

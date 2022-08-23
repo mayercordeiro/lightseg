@@ -1,10 +1,10 @@
 .notFound {
-  max-width: 1270px;
-  margin: 100px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 150px;
+  position: relative;
+  top: 150px;
+  margin-bottom: 200px;
 }
 .notFound h1 {
   text-align: center;
@@ -20,6 +20,10 @@
   -webkit-text-fill-color: transparent;
   padding-bottom: 3px;
   margin: 50px auto;
+}
+.notFound img {
+  max-width: 800px;
+  padding: 16px;
 }
 .VoltarIniciaBotao {
   width: 100%;

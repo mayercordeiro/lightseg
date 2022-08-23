@@ -137,7 +137,7 @@
 }
 .openbtn {
   position: absolute;
-  right: 0;
+  right: 10px;
   top: 32px;
   font-size: 40px;
   cursor: pointer;
@@ -152,7 +152,7 @@
 }
 .openbtnScroll {
   position: absolute;
-  right: 0;
+  right: 10px;
   top: 6px;
   font-size: 40px;
   cursor: pointer;

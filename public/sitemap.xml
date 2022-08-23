@@ -5,35 +5,35 @@
     <url>
         <loc>https://lightseg.com.br/</loc>
         <lastmod>2022-08-12T17:35:10+00:00</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
 
     <url>
         <loc>https://lightseg.com.br/contato</loc>
         <lastmod>2022-08-12T17:35:10+00:00</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://lightseg.com.br/seguros</loc>
         <lastmod>2022-08-12T17:35:10+00:00</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://lightseg.com.br/sobre</loc>
         <lastmod>2022-08-12T17:35:10+00:00</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>https://lightseg.com.br/blog</loc>
         <lastmod>2022-08-12T17:35:10+00:00</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
 

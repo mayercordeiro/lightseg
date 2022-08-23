@@ -1,4 +1,5 @@
-
+// CSS
+import "./TextSegurosStyles.css";
 
 const Residencial = () => {
   return (

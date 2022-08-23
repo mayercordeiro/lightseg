@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NewHeader from "./components/NewHeader/NewHeader";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/NewHeader/ScrollToTop";
+import AOS from 'aos';
 // Pages
 import Home from "./pages/Home";
 import Sobre from "./pages/Sobre";
@@ -17,9 +18,6 @@ import Contato from "./pages/Contato";
 import Blog from "./pages/Blog";
 import Post from "./components/Post/Post";
 import PageNotFound from "./pages/PageNotFound";
-// Components
-import WhatsApp from "./components/WhatsApp/WhatsApp";
-import AOS from 'aos';
 
 function App() {
 
@@ -42,7 +40,6 @@ function App() {
         <Route path="/post/:id" element={<Post />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
-      <WhatsApp />
       <Footer />
     </BrowserRouter>
   );

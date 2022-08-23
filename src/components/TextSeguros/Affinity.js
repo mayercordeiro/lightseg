@@ -1,3 +1,6 @@
+// CSS
+import "./TextSegurosStyles.css";
+
 const Affinity = () => {
   return (
     <section className="text_seguros">

@@ -58,8 +58,3 @@
 .saibamaisContainer{
   margin-top: 50px;
 }
-@media screen and (max-width: 599px) {
-  .saibamaisContainer {
-    text-align: center;
-  }
-}
