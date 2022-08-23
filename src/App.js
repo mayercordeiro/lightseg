@@ -1,14 +1,14 @@
 import { useEffect } from "react";
 // CSS
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "aos/dist/aos.css";
 // Router
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // Components
-import Header from "./components/Header/Header";
+import NewHeader from "./components/NewHeader/NewHeader";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/NewHeader/ScrollToTop";
-import NewHeader from "./components/NewHeader/NewHeader";
 // Pages
 import Home from "./pages/Home";
 import Sobre from "./pages/Sobre";

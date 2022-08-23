@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 // Router
 import { NavLink, useLocation } from "react-router-dom";
 // CSS
@@ -83,13 +83,19 @@ const NewHeader = () => {
           <NavLink to="/contato" onClick={handleMobile}>
             <li>Contato</li>
           </NavLink>
+          <NavLink to="/seguros" onClick={handleMobile}>
+            <li>Cote Agora!</li>
+          </NavLink>
         </div>
 
         <button class={btnOpen} onClick={handleMobile}>
           &#9776;
         </button>
       </nav>
-      <div className={mobileActive ? "fundoMobile" : ""} onClick={handleMobile}></div>
+      <div
+        className={mobileActive ? "fundoMobile" : ""}
+        onClick={handleMobile}
+      ></div>
     </header>
   );
 };

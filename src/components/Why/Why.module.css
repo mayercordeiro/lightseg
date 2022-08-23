@@ -15,12 +15,7 @@
   text-align: center;
   font-weight: 700;
   font-size: 3rem;
-  background: linear-gradient(
-    90deg,
-    #0b3a5e 27.89%,
-    #6f892e 59.54%,
-    #cdd400 79.49%
-  );
+  background: linear-gradient( 90deg, #0b3a5e 35%, #6f892e 45%, #cdd400 60% );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-bottom: 3px;
@@ -43,6 +38,9 @@
 .whyContent {
   display: flex;
   align-items: center;
+}
+.whyContent img {
+  height: 86px;
 }
 .whyContent > h3 {
   font-size: 1.75rem;

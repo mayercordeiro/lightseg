@@ -1,9 +1,8 @@
 .containerMain {
   display: grid;
-  grid-template-columns: minmax(104px, auto) minmax(380px, 600px) minmax(
-      380px,
-      670px
-    ) minmax(104px, auto);
+  grid-template-columns:
+    minmax(104px, auto) minmax(380px, 600px) minmax(380px, 670px)
+    minmax(104px, auto);
   margin-bottom: 290px;
 }
 .intro {
@@ -21,7 +20,7 @@
   cursor: pointer;
 }
 .intro h1::before {
-  content: '';
+  content: "";
   background-color: #dade30;
   position: absolute;
   left: 0;
@@ -29,7 +28,7 @@
   width: 100%;
   height: 16px;
   z-index: -1;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .intro h1:hover::before {
   bottom: 0;
@@ -65,7 +64,6 @@
   justify-self: end;
   background-image: url(../../assets/images/estampa-site.svg);
 }
-
 .cotacao_h2 {
   font-size: 1.75rem;
   font-weight: bold;
@@ -107,13 +105,13 @@
   transition: 0.3s;
   text-decoration: none !important;
   text-align: center;
-  transition: all .7s ease;
+  transition: all 0.7s ease;
 }
 .botaoseguros:hover {
   background-image: unset;
   background-color: #0b3a5e;
-  color: #FFF;
-  transition: all .7s ease;
+  color: #fff;
+  transition: all 0.7s ease;
 }
 @media screen and (max-width: 1329px) {
   .intro p {
@@ -127,7 +125,10 @@
 }
 @media screen and (max-width: 1125px) {
   .containerMain {
-    grid-template-columns: minmax(16px, auto) minmax(380px, 670px) minmax(16px, auto);
+    grid-template-columns: minmax(16px, auto) minmax(380px, 670px) minmax(
+        16px,
+        auto
+      );
     margin-bottom: unset;
   }
   .intro {
@@ -191,8 +192,9 @@
 @media screen and (max-width: 499px) {
   .slideseguros {
     display: flex;
-    flex-direction: column;
-    gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 28px;
     justify-content: center;
     align-items: center;
   }

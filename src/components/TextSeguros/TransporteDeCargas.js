@@ -41,7 +41,7 @@ const TransporteDeCargas = () => {
       <div className="content_seguros_texts">
         {activeTab === "item1" && (
           <div className="content">
-            <h3>O que é o seguro RCTR-C?</h3>
+            <h3>O que é o seguro RCTRC?</h3>
             <h4>
               Responsabilidade Civil do Transportador Rodoviário de Carga.
             </h4>
@@ -141,7 +141,7 @@ const TransporteDeCargas = () => {
         )}
         {activeTab === "item3" && (
           <div className="content">
-            <h3>O que é o seguro RCTR-C-VI?</h3>
+            <h3>O que é o seguro RCTRC-VI?</h3>
             <h4>
               Proin vel interdum lorem. Maecenas pulvinar, purus ut convallis
               varius

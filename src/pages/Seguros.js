@@ -21,7 +21,7 @@ const Seguros = () => {
       <section className={styles.seguros}>
         <h1 data-aos="fade-right" data-aos-once="true" data-aos-delay="300">Confira Nossas Soluções em Seguros</h1>
         <h2 data-aos="fade-right" data-aos-once="true" data-aos-delay="300">
-          Saiba mais sobre os nossos diferentes tipos de seguro e Cote Agora!
+          Saiba mais sobre os nossos diferentes tipos de seguros e Cote Agora Mesmo!
           Proteja o futuro financeiro da sua empresa, seu e de sua família.
         </h2>
 

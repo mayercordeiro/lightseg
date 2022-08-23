@@ -1,5 +1,7 @@
+// Router
+import { NavLink } from "react-router-dom";
 // CSS
-import styles from "./FirstTab.module.css";
+import styles from "./ThirdTab.module.css";
 
 const FirstTab = () => {
   return (
@@ -14,6 +16,11 @@ const FirstTab = () => {
         Esta apólice de seguro é destinada às transportadoras que operam em
         transporte rodoviários de cargas com viagens internacionais.
       </p>
+      <div className={styles.saibamaisContainer}>
+        <NavLink to="/seguros" className={styles.saibamais}>
+          Saiba Mais
+        </NavLink>
+      </div>
     </div>
   );
 };

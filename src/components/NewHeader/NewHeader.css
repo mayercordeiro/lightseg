@@ -6,6 +6,7 @@
   justify-content: center;
   box-sizing: border-box;
   transition: all 0.7s ease;
+  font-family: "Montserrat", sans-serif;
 }
 .header > nav {
   display: flex;
@@ -30,15 +31,22 @@
   font-size: 1.1rem;
   font-weight: 700;
 }
-#cote{
-  background-color: #DADE30;
+#cote {
+  background-color: #dade30;
   border-radius: 10px;
   margin-right: 0;
   padding: 2px 0;
-  transition: all .7s ease;
+  transition: all 0.7s ease;
 }
-#cote > li{
+#cote:hover {
+  background-color: #0c3b5e;
+}
+#cote > li {
   color: #0c3b5e !important;
+}
+#cote > li:hover {
+  color: #fff !important;
+  transition: all 0.7s ease;
 }
 /* Scroll Ativo */
 .headerScroll {
@@ -51,6 +59,7 @@
   justify-content: center;
   box-sizing: border-box;
   transition: all 0.7s ease;
+  font-family: "Montserrat", sans-serif;
 }
 .headerScroll > nav {
   display: flex;
@@ -121,9 +130,9 @@
   right: 25px;
   font-size: 50px;
   color: #0b3a5e;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
-.sidepanel .closebtn:hover{
+.sidepanel .closebtn:hover {
   color: #da2828;
 }
 .openbtn {
@@ -158,14 +167,14 @@
 }
 /* Estilos para páginas diferentes da Home */
 #menuPages {
-  background: #FFF;
+  background: #fff;
   box-shadow: 0 3px 10px 0 #00000070;
 }
 #menuPages ul li {
   color: #0c3b5e;
 }
 #menuPages ul li:hover {
-  color: #DADE30;
+  color: #dade30;
 }
 /* Media Queries */
 @media screen and (max-width: 1299px) {
@@ -182,13 +191,13 @@
 @media screen and (max-width: 1199px) {
   .header > nav {
     padding: 8px 16px;
-}
-.headerScroll > nav {
-  padding: 8px 16px;
-}
+  }
+  .headerScroll > nav {
+    padding: 8px 16px;
+  }
 }
 /* Ocultar Navegação Normal para Ativar a Mobile */
-@media screen and (max-width: 879px) {
+@media screen and (max-width: 969px) {
   .header {
     background-color: #fff;
     box-shadow: 0 3px 10px 0 #00000070;
@@ -210,11 +219,11 @@
     display: none;
   }
 }
-@media screen and (min-width: 880px) {
+@media screen and (min-width: 970px) {
   .openbtn {
     display: none;
   }
-  .openbtnScroll{
+  .openbtnScroll {
     display: none;
   }
 }
