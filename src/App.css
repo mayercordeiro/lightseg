@@ -140,9 +140,6 @@ a:hover {
   --bs-btn-border-color: #0b3a5e !important;
 }
 /* Sobrepor Modal ao WhatsApp Widget */
-.whatsapp_widget_wrapper {
-  z-index: 999 !important;
-}
 .modal {
   z-index: 3500 !important;
 }

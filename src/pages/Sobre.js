@@ -7,7 +7,6 @@ import SetaSobre from "../assets/images/setasobre.svg";
 import Breadcrumbs from "../components/Breadcrumb/Breadcrumbs";
 
 const Sobre = () => {
-
   const [activeTab, setActiveTab] = useState("tab1");
 
   const handleTab1 = () => {

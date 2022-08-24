@@ -9,7 +9,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NewHeader from "./components/NewHeader/NewHeader";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/NewHeader/ScrollToTop";
-import AOS from 'aos';
+import AOS from "aos";
+import FloatingWhatsApp from 'react-floating-whatsapp'
+// Images
+import avatar from "./assets/images/whats_avatar.jpg";
 // Pages
 import Home from "./pages/Home";
 import Sobre from "./pages/Sobre";
@@ -20,7 +23,6 @@ import Post from "./components/Post/Post";
 import PageNotFound from "./pages/PageNotFound";
 
 function App() {
-
   useEffect(() => {
     AOS.init({
       duration: 2000,
@@ -41,6 +43,7 @@ function App() {
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />
+      <FloatingWhatsApp phoneNumber="554192743680" accountName="LightSeg" avatar={avatar} statusMessage="Online" chatMessage="Seja bem vindo a LightSeg, como podemos ajudá-lo?" placeholder="Escreva uma mensagem" allowClickAway="true" className="whatsWidget" />
     </BrowserRouter>
   );
 }
