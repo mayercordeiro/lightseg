@@ -143,32 +143,51 @@ const TransporteDeCargas = () => {
           <div className="content">
             <h3>O que é o seguro RCTRC-VI?</h3>
             <h4>
-              Proin vel interdum lorem. Maecenas pulvinar, purus ut convallis
-              varius
+              Responsabilidade Civil do Transportador em Viagem Internacional.
             </h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              euismod et turpis at imperdiet. Vestibulum eu diam quis nisi
-              maximus malesuada eu eget mi. Donec quis massa nec mi aliquet
-              dapibus. Nunc euismod neque eget ligula venenatis commodo.
-              Phasellus id lectus et lorem pulvinar facilisis. Curabitur finibus
-              justo sapien, quis pulvinar enim euismod nec. Vestibulum ante
-              ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-              curae; Morbi in odio dui. Phasellus tempus orci nec posuere
-              hendrerit. Aliquam suscipit egestas venenatis. Nulla pulvinar, mi
-              at blandit dapibus, risus est viverra nisl, non molestie mi elit
-              congue risus. Proin vel interdum lorem. Maecenas pulvinar, purus
-              ut convallis varius, orci lorem ornare dolor, pharetra condimentum
-              dui lectus vitae odio. Suspendisse nec turpis et felis tempus
-              suscipit vitae eget nisl. Fusce suscipit, est ut accumsan
-              vulputate, sem nibh volutpat erat, sed ultricies lorem lectus ac
-              purus. Cras at sem iaculis, egestas magna quis, scelerisque
-              tellus. Vestibulum ante ipsum primis in faucibus orci luctus et
-              ultrices posuere cubilia curae; Phasellus vel est posuere, tempus
-              lectus et, vestibulum libero. Nunc pharetra mollis risus, nec
-              dapibus augue euismod a. Mauris cursus urna et nisi eleifend, id
-              facilisis tortor luctus. Cras luctus justo sed turpis molestie
-              suscipit.
+              O presente contrato de seguro tem por objeto, nos termos das
+              presentes condições e do convênio sobre Transporte Internacional
+              Terrestre, reembolsar ao Segurado (até o limite do valor segurado)
+              as quantias pelas quais, por disposição das Leis comerciais e
+              civis, for ele responsável, em virtude das perdas ou danos
+              sofridos pelos bens ou mercadorias pertencentes a terceiros e que
+              lhe tenham sido entregues para transporte, por rodovia para viagem
+              internacional, contra conhecimento de transporte rodoviário de
+              carga, ou ainda, outro documento hábil, desde que aquelas perdas
+              ou danos ocorram durante o transporte e sejam causados diretamente
+              por:
+            </p>
+            <ol>
+              <li>
+                Colisão e/ou capotagem e/ou abalroamento e/ou tombamento do
+                veículo transportador, compreendido na cobertura, conforme
+                indicado em condição particular.
+              </li>
+              <li>
+                Incêndio ou explosão no veículo transportador, compreendido na
+                cobertura, conforme indicado em condição particular.
+              </li>
+              <li>
+                Observado o critério de aferição da responsabilidade
+                estabelecida nesta Cláusula, acha-se, ainda, coberta a
+                responsabilidade do Segurado pelas perdas ou danos sofridos
+                pelos bens ou mercadorias, consequentes dos riscos de incêndio
+                ou explosão nos depósitos, armazéns ou pátios usados pelo
+                Segurado, em localidades fora do território do País que emitiu a
+                apólice, ainda que os ditos bens ou mercadorias se encontrem
+                fora dos veículos transportadores. para os efeitos da presente
+                cobertura, os depósitos, armazéns ou pátios usados pelo Segurado
+                deverão ser cobertos e fechados. Na falta de lugares cobertos e
+                fechados, será requisito para a manutenção da cobertura que as
+                mercadorias ou bens se encontrem em lugares adequados e sob
+                vigilância permanente.
+              </li>
+            </ol>
+            <p>
+              As disposições deste contrato de seguro aplicam-se <span className="negrito">exclusivamente as ocorrências fora do território do País em que tenha sido emitida a apólice</span>, podendo ser adotadas internamente, a critério
+              de cada signatário do Convênio e por disposição especial e
+              expressa em cláusula particular.
             </p>
           </div>
         )}

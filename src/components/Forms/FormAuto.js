@@ -17,7 +17,7 @@ const FormGeral = (props) => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [nascimento, setNascimento] = useState("");
-  const [veiculo, setVeiculo] = useState("");
+  const [veiculo, setVeiculo] = useState("Selecione");
   const [marca, setMarca] = useState("");
   const [modelo, setModelo] = useState("");
   const [ano, setAno] = useState("");
@@ -63,7 +63,7 @@ const FormGeral = (props) => {
         setEmail("");
         setPhone("");
         setNascimento("");
-        setVeiculo("");
+        setVeiculo("Selecione");
         setMarca("");
         setModelo("");
         setAno("");
@@ -77,7 +77,7 @@ const FormGeral = (props) => {
         setEmail("");
         setPhone("");
         setNascimento("");
-        setVeiculo("");
+        setVeiculo("Selecione");
         setMarca("");
         setModelo("");
         setAno("");
@@ -174,10 +174,9 @@ const FormGeral = (props) => {
                 name="veiculo"
                 onChange={(e) => setVeiculo(e.target.value)}
                 required
+                value={veiculo}
               >
-                <option disabled selected>
-                  Selecione
-                </option>
+                <option value="Selecione" disabled>Selecione</option>
                 <option value="Automóvel">Automóvel</option>
                 <option value="Caminhão">Caminhão</option>
                 <option value="Motocicleta">Motocicleta</option>
