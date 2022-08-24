@@ -43,7 +43,7 @@ function App() {
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />
-      <FloatingWhatsApp phoneNumber="554192743680" accountName="LightSeg" avatar={avatar} statusMessage="Online" chatMessage="Seja bem vindo a LightSeg, como podemos ajudá-lo?" placeholder="Escreva uma mensagem" allowClickAway="true" className="whatsWidget" />
+      <FloatingWhatsApp className="whatsapp" phoneNumber="554192743680" accountName="LightSeg" avatar={avatar} statusMessage="Online" chatMessage="Olá, Como podemos ajudá-lo?" placeholder="Escreva uma mensagem" allowClickAway />
     </BrowserRouter>
   );
 }

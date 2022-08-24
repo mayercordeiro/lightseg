@@ -103,7 +103,7 @@ section {
 }
 body {
   line-height: 1;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 ol,
 ul {
@@ -131,9 +131,10 @@ a:hover {
 .carousel-indicators {
   margin-bottom: -3rem !important;
 }
-.carousel-control-next, .carousel-control-prev {
-	width: unset !important;
-	padding: 0 5px !important;
+.carousel-control-next,
+.carousel-control-prev {
+  width: unset !important;
+  padding: 0 5px !important;
 }
 .btn-primary {
   --bs-btn-bg: #0b3a5e !important;
@@ -146,6 +147,21 @@ a:hover {
 .modal-backdrop {
   z-index: 3000;
 }
+/* WhatsApp Widget */
+.whatsapp {
+  z-index: 1000;
+}
+.whatsapp > div:nth-child(1) {
+  bottom: .8rem;
+  right: .8rem;
+}
+.whatsapp > div:nth-child(2) img {
+  border: 1px solid #085f55;
+}
+.whatsapp > div:nth-child(2) > div > div {
+  max-width: calc(100% - 80px);
+}
+
 @media screen and (max-width: 499px) {
   .carousel-item {
     height: 280px;
