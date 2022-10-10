@@ -10,7 +10,6 @@ import NewHeader from "./components/NewHeader/NewHeader";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/NewHeader/ScrollToTop";
 import AOS from "aos";
-import FloatingWhatsApp from "react-floating-whatsapp";
 // Images
 import avatar from "./assets/images/whats_avatar.jpg";
 // Pages
@@ -43,7 +42,6 @@ function App() {
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />
-      {/*<FloatingWhatsApp className="whatsapp" phoneNumber="554192743680" accountName="LightSeg" avatar={avatar} statusMessage="Online" chatMessage="Olá, Como podemos ajudá-lo?" placeholder="Escreva uma mensagem" allowClickAway />*/}
     </BrowserRouter>
   );
 }
