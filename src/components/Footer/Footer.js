@@ -12,7 +12,12 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div>
-          <img className={styles.logo} src={LogoFooter} loading="lazy" alt="Logo LightSeg" />
+          <img
+            className={styles.logo}
+            src={LogoFooter}
+            loading="lazy"
+            alt="Logo LightSeg"
+          />
           <div className={styles.text}>
             <p>
               "Proporcionar tranquilidade aos nossos clientes com seguros na
@@ -94,6 +99,9 @@ const Footer = () => {
           <ul>
             <li>
               <NavLink to="/seguros">Affinity</NavLink>
+            </li>
+            <li>
+              <NavLink to="/seguros">Ambiental</NavLink>
             </li>
             <li>
               <NavLink to="/seguros">Auto</NavLink>

@@ -13,6 +13,9 @@ const TransporteDeCargas = () => {
   const handleItem3 = () => {
     setActiveTab("item3");
   };
+  const handleItem4 = () => {
+    setActiveTab("item4");
+  };
 
   return (
     <section className="text_seguros">
@@ -35,6 +38,12 @@ const TransporteDeCargas = () => {
           onClick={handleItem3}
         >
           RCTRC–VI
+        </li>
+        <li
+          className={activeTab === "item4" ? "active-text" : ""}
+          onClick={handleItem4}
+        >
+          EMBARCADORES
         </li>
       </ol>
 
@@ -185,10 +194,70 @@ const TransporteDeCargas = () => {
               </li>
             </ol>
             <p>
-              As disposições deste contrato de seguro aplicam-se <span className="negrito">exclusivamente as ocorrências fora do território do País em que tenha sido emitida a apólice</span>, podendo ser adotadas internamente, a critério
-              de cada signatário do Convênio e por disposição especial e
-              expressa em cláusula particular.
+              As disposições deste contrato de seguro aplicam-se{" "}
+              <span className="negrito">
+                exclusivamente as ocorrências fora do território do País em que
+                tenha sido emitida a apólice
+              </span>
+              , podendo ser adotadas internamente, a critério de cada signatário
+              do Convênio e por disposição especial e expressa em cláusula
+              particular.
             </p>
+          </div>
+        )}
+        {activeTab === "item4" && (
+          <div className="content">
+            <h3>Seguro de Transporte para Embarcadores</h3>
+            <h4>* Transporte da própria mercadoria</h4>
+            <p>
+              Este seguro é contratado pelo dono da mercadoria, se destina a
+              cobrir danos a ela, quando estiver sendo transportada. O seguro
+              para embarcadores está dividido em duas modalidades de seguro. O
+              seguro Nacional e o Internacional.
+            </p>
+            <h3 className="negrito">Transporte Nacional</h3>
+            <p>
+              Oferece cobertura a carga, quando em transporte, em operações
+              exclusivamente dentro do país.
+            </p>
+            <p className="negrito">Principais coberturas:</p>
+            <ul>
+              <li>
+                <span className="negrito">Cobertura ampla:</span> Basicamente
+                cobre todos os riscos a mercadoria por causas externas, roubo e
+                avarias.
+              </li>
+              <li>
+                <span className="negrito">Cobertura restrita C:</span> Cobre os
+                riscos em decorrência de acidente com o veículo transportador.
+              </li>
+            </ul>
+            <h3 className="negrito">Transporte Internacional</h3>
+            <p>
+              O seguro de transporte internacional se destina a todas as
+              empresas que exportam e ou importam mercadorias para outros
+              países. Essas empresas por sua vez, devem ter uma atenção especial
+              com esse seguro, pois, a responsabilidade e o risco, variam
+              conforme a incoterm utilizada na negociação e que devem ser
+              seguidas conforme o tratado em vigor.
+            </p>
+            <p className="negrito">Algumas coberturas:</p>
+            <ul>
+              <li>
+                <span className="negrito">Cobertura Ampla:</span> Danos a
+                mercadoria decorrente a causas externas, avarias, avaria grossa,
+                roubo e furto.
+              </li>
+              <li>
+                <span className="negrito">Cobertura restrita B:</span> Garantia
+                decorrente ao acidente com o veículo transportador, podendo ser
+                incluída a cobertura adicional de roubo.
+              </li>
+              <li>
+                <span className="negrito">Cobertura restrita C:</span> Danos
+                decorrentes apenas por acidente do veículo transportador.
+              </li>
+            </ul>
           </div>
         )}
       </div>

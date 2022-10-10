@@ -5,6 +5,7 @@ import "./IntroSeguros.css";
 import FirstTab from "./Tabs/FirstTab";
 import SecondTab from "./Tabs/SecondTab";
 import ThirdTab from "./Tabs/ThirdTab";
+import ForthTab from "./Tabs/ForthTab";
 // Images
 import N1 from "../../assets/images/intron1.svg";
 import Seta from "../../assets/images/setahome.svg";
@@ -24,6 +25,10 @@ const IntroSeguros = () => {
     setActiveTab("tab3");
   };
 
+  const handleTab4 = () => {
+    setActiveTab("tab4");
+  };
+
   return (
     <section className="intro_seguros">
       <div className="tabs">
@@ -39,7 +44,11 @@ const IntroSeguros = () => {
           <p>Nº 1 em Seguros para o Transporte de Cargas</p>
         </div>
 
-        <div className="container_nav" data-aos="zoom-in-right" data-aos-once="true">
+        <div
+          className="container_nav"
+          data-aos="zoom-in-right"
+          data-aos-once="true"
+        >
           <ul className="nav">
             <li
               className={activeTab === "tab1" ? "active" : ""}
@@ -62,6 +71,13 @@ const IntroSeguros = () => {
               <span>RCTRC – VI</span>
               <img src={Seta} />
             </li>
+            <li
+              className={activeTab === "tab4" ? "active" : ""}
+              onClick={handleTab4}
+            >
+              <span>EMBARCADORES</span>
+              <img src={Seta} />
+            </li>
           </ul>
         </div>
 
@@ -79,6 +95,11 @@ const IntroSeguros = () => {
           {activeTab === "tab3" && (
             <>
               <ThirdTab />
+            </>
+          )}
+          {activeTab === "tab4" && (
+            <>
+              <ForthTab />
             </>
           )}
         </div>

@@ -16,7 +16,6 @@
   width: 525px;
   height: 600px;
   z-index: 998;
-
 }
 .container_nav {
   grid-column: 2 /3;
@@ -57,7 +56,7 @@ ul.nav {
 }
 ul.nav li {
   width: 50%;
-  margin: 50px 16px;
+  margin: 30px 16px;
   padding: 1rem;
   list-style: none;
   text-align: center;
